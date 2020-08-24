@@ -1,0 +1,70 @@
+#userPhoto{
+    height: 150px!important;
+    width: 150px!important;
+    margin: 0 auto;
+}
+
+#unicornDuck{
+    height: 420px!important;
+    width: 600px!important;
+    overflow-y: scroll;
+    position: relative;
+}
+
+#craftCoffee{
+    margin-bottom: 10px;
+    margin-top: 52px;
+    padding-left: 0px;
+}
+
+#seltzer{
+    width: 45%!important;
+    color: #f5f5f5;
+    background-color: #3bd389;
+    margin: 0px 5px 0px 5px;
+    font-size: 15px;
+}
+
+#seltzer:hover{
+    background-color: #363636!important;
+    color: #f5f5f5!important;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+
+#seltzer2{
+    width: 45%!important;
+    color: #3bd389;
+    margin: 0px 5px 0px 5px;
+    font-size: 15px;
+}
+
+#seltzer2:hover{
+    background-color: #363636!important;
+    color: #f5f5f5!important;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+
+.modal-card-foot, .modal-card-head {
+    background-color: #ffffff;
+    border: #ffffff;
+}
+#errormsg{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+.errMsg{
+    padding: 7px;  
+   /* border: 1px solid red;  */
+  color: red;
+  /* text-align: center;   */
+  font-size: large;
+  }
+
+  @media only screen and (max-width: 600px ) {
+    #unicornDuck{
+        width: 350px!important;
+    }
+}

@@ -1,0 +1,9 @@
+#contactMe{
+    float: right;
+    color: #3bd389;
+}
+
+#contactMe:hover{
+    background-color: #363636;
+    color: #f5f5f5;
+}   

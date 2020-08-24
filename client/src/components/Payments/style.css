@@ -1,0 +1,29 @@
+#friendImage{
+    height: 48px!important;
+    width: 48px!important;
+    margin: 0 auto;
+    margin-right: 1%;
+}
+
+.transactionInfo {
+    font-size: 20px;
+}
+
+#payments{
+    height: 300px;
+    overflow-y: scroll;
+}
+
+#userPhoto{
+    height: 150px!important;
+    width: 150px!important;
+    margin: 0 auto;
+}
+
+#pinkDuck{
+    height: 920px!important;
+    width: 412px!important; 
+    overflow-y: scroll;
+    position: relative;
+}
+
