@@ -55,11 +55,12 @@ function Landing() {
                       <UserNameCard />
                       <ProfileImage />
                       <br />
-                      <ProfileBtns />
-                      <p id="funds">
+                       <p id="funds">
                         Funds Available: $ {currentUserObj.balance}
                       </p>
                       <p id="member">Member Since: {createdDate}</p>
+                      <br />
+                      <ProfileBtns />
                     </div>
                   </div>
                   <div className="tile is-child box is-fullwidth">
