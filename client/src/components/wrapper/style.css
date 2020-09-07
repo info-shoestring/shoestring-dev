@@ -1,0 +1,6 @@
+@media only screen and (max-width: 768px) {
+    #table-mobile{
+       margin-right: 10%;
+       margin-left: 10%;
+    }   
+}

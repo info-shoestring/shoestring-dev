@@ -14,14 +14,15 @@ const location = useLocation();
     <div>
       <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation" id="opening-nav">
         <div className="navbar-brand">
-          <Link to="/" className="navbar-item">
-            <img src={Image} alt="logo" width="112" height="28"/>
+          <Link to="/" className="navbar-item" >
+            <img src={Image} alt="logo" id="logo-main"/>
           </Link>
 
           <Link to="#" 
           onClick={() => {setisActive(!isActive);}}
           role="button" 
           className={`navbar-burger burger ${isActive ? "is-active" : ""}`}
+          id="menu-main"
           aria-label="menu" 
           aria-expanded="false" 
           data-target="navbarBasicExample">
@@ -45,7 +46,7 @@ const location = useLocation();
               Contact
             </Link>
 
-            <div className="navbar-item has-dropdown is-hoverable" >
+            {/* <div className="navbar-item has-dropdown is-hoverable" >
               <Link to="#" className="navbar-link" id="navitems">
                 More
               </Link>
@@ -56,7 +57,7 @@ const location = useLocation();
                   Report an issue
                 </Link>
               </div>
-            </div>
+            </div> */}
           </div>
 
           <div className="navbar-end">

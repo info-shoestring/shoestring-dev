@@ -1,0 +1,21 @@
+#aboutPhoto{
+    height: 300px;
+    width: 300px;
+}
+
+#photo-placement{
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+@media only screen and (max-width: 768px) {
+    #change-me{
+        display: none; 
+    }
+    #team{
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+}
