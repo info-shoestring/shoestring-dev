@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 import { Link, useLocation } from "react-router-dom";
-import Image from '../../images/Logos/vector/default-monochrome-black.svg'
+import Image from '../../../images/Logos/vector/default-monochrome-black.svg'
 
 
 const Navbar = () => {

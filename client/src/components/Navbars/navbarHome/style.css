@@ -1,0 +1,60 @@
+#opening-nav{
+    background-color: #3bd389;
+    padding: 0px!important;
+}
+
+#home-nav{
+    margin: 0 auto;
+}
+
+#home-link{
+    margin-right: 50px;
+    font-size: 20px;
+}
+
+#about-link{
+    margin-right: 50px;
+    font-size: 20px;
+}
+
+#contact-link, #signup-link, #login-link{
+    font-size: 20px;
+}
+
+#text-theme{
+    color: #3bd389;
+}
+
+#text-theme:hover{
+    background-color: #363636;
+    color: #f5f5f5;
+}
+
+#logo-main{
+    display:none;
+}
+
+@media only screen and (max-width: 768px) {
+    #logo-main{
+        display: block;
+        width: 50%;
+        height: auto;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: 20px;
+        margin-right: -90px;
+    }
+    #text-theme{
+        margin-right: 100%;
+        width: 100%!important;
+    }
+    #menu-main{
+        margin-top: 15px;
+    }
+    #opening-nav{
+        padding-left: 0;
+    }
+
+}
+

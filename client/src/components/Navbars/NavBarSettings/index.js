@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from "react-router-dom";
 import Image from '../../images/Logos/vector/default-monochrome-black.svg'
-import httpClient from '../../httpClient'
+import httpClient from '../../../httpClient'
 
 const NavBarSettings = (currentUser) => {
 

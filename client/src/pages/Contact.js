@@ -1,12 +1,12 @@
 import React from 'react';
-import Navbar from '../components/navbar';
+import DrawerHome from '../components/Drawers/DrawerHome';
 import ContactForm from '../components/contactForm';
 import "./design/Home.css"
 
 function Contact() {
     return (
         <>
-            <Navbar />
+            <DrawerHome/>
             <ContactForm/>
 
         </>

@@ -1,0 +1,11 @@
+#menu-links{
+    margin-top: 120px!important;
+}
+
+#home-link, #about-link, #contact-link, #signup-link, #login-link{
+    color: white!important
+}
+
+#heroHomePage2{
+    background-color: #3DD388;
+}

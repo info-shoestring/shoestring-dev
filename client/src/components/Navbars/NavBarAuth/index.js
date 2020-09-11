@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./style.css";
 import { Link, useLocation } from "react-router-dom";
 import Image from '../../images/Logos/vector/default-monochrome-black.svg'
-import httpClient from '../../httpClient'
+import httpClient from '../../../httpClient'
 import { mdiBellOutline } from '@mdi/js';
 import Icon from '@mdi/react';
 import { mdiCogOutline } from '@mdi/js';
