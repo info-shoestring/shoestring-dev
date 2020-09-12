@@ -13,7 +13,6 @@ function About() {
         <div className="hero-body">
           <div id="drawer-view">
             <DrawerHome />
-
           </div>
         </div>
       </section>

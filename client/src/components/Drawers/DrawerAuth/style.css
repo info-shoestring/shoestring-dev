@@ -2,35 +2,30 @@
     margin-top: 120px!important;
 }
 
-#home-link-title, #home-link, #about-link, #contact-link, #signup-link, #login-link{
+#myprofile-title, #myprofile-link, #findafriend-link, #international-link, #logout-link{
     color: white!important
 }
 
-#home-link-title:hover{
+#myprofile-title:hover{
     background-color: #3bd389!important;
 }
 
-#home-link:hover{
+#myprofile-link:hover{
     color: #363636!important;
     background-color: #3bd389!important;
 }
 
-#about-link:hover{
+#findafriend-link:hover{
     color: #363636!important;
     background-color: #3bd389!important;
 }
 
-#contact-link:hover{
+#international-link:hover{
     color: #363636!important;
     background-color: #3bd389!important;
 }
 
-#signup-link:hover{
-    color: #363636!important;
-    background-color: #3bd389!important;
-}
-
-#login-link:hover{
+#logout-link:hover{
     color: #363636!important;
     background-color: #3bd389!important;
 }

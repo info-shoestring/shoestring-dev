@@ -3,11 +3,14 @@ import httpClient from "../httpClient";
 import "./design/Landing.css";
 import Friends from "../components/FriendCard";
 import ProfileBtns from "../components/ProfileBtns";
-import NavBarAuth from "../components/NavBarAuth";
+import DrawerAuth from "../components/Drawers/DrawerAuth";
+import NavbarAuth from "../components/Navbars/NavBarAuth";
 import UserNameCard from "../components/UserNameCard";
 import ProfileImage from "../components/ProfileImage";
 import Payments from "./../components/Payments";
 import moment from "moment";
+import "./design/About.css";
+import "./design/Home.css";
 
 function Landing() {
   const [currentUserObj, setCurrentUserObj] = useState({
@@ -42,7 +45,20 @@ function Landing() {
     <>
       {currentUserObj !== null ? (
         <div>
-          <NavBarAuth />
+          <section className="hero is-info is-large" id="heroHomePage">
+            <div className="hero-body">
+              <div id="drawer-view">
+               <DrawerAuth/>
+              </div>
+          </div>
+      </section>
+      <div id="tablet-mobile">
+        <div id="nav-view">
+          <NavbarAuth />
+          <br/>
+        </div>
+        <br />
+        <br />
           <div className="outerTile">
             <div className="is-clearfix columns is-centered">
               <div
@@ -71,6 +87,7 @@ function Landing() {
               <Friends />
             </div>
           </div>
+        </div>
         </div>
       ) : (
         window.location.replace("/")
