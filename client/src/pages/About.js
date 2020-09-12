@@ -1,14 +1,26 @@
 import React from "react";
 import TheTeam from "./../components/TheTeam";
-import DrawerHome from '../components/Drawers/DrawerHome';
+import DrawerHome from "../components/Drawers/DrawerHome";
+import NavbarHome from "../components/Navbars/navbarHome";
 import "./design/About.css";
+import "./design/Home.css";
 
 function About() {
+  
   return (
     <>
+      <section className="hero is-info is-large" id="heroHomePage">
+        <div className="hero-body">
+          <div id="drawer-view">
+            <DrawerHome />
+
+          </div>
+        </div>
+      </section>
       <div id="tablet-mobile">
-        <div id="drawer-view2">
-          <DrawerHome />
+        <div id="nav-view">
+          <NavbarHome />
+          <br/>
         </div>
         <br />
         <br />
@@ -21,7 +33,6 @@ function About() {
                   <p className="title is-2">About Shoestring</p>
                   <br />
                   <p>
-                    {" "}
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation

@@ -46,23 +46,23 @@ html, body {
   }
   
   .pure-toggle:focus ~ .pure-toggle-label {
-    border-color: #363636;
-    color: #363636;
+    border-color: #ffffff;
+    color: #ffffff;
   }
   
   .pure-toggle-label {
     display: none;
     cursor: pointer;
     display: block;
-    position: fixed;
+    position: absolute;
     top: 15px;
     z-index: 99;
-    color: #363636;
+    color: #ffffff;
     width: 70px;
     height: 70px;
     -webkit-transition: all 400ms ease-in-out;
             transition: all 400ms ease-in-out;
-    border: 2px solid #363636;
+    border: 2px solid #ffffff;
     border-radius: 50%;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -73,14 +73,14 @@ html, body {
   }
   
   .pure-toggle-label:hover {
-    border-color: #363636;
-    color: #363636;
+    border-color: #ffffff;
+    color: #ffffff;
   }
   
   .pure-toggle-label:hover .pure-toggle-icon,
   .pure-toggle-label:hover .pure-toggle-icon:before,
   .pure-toggle-label:hover .pure-toggle-icon:after {
-    background-color: #363636;
+    background-color: #ffffff;
   }
   
   .pure-toggle-label:active {
@@ -96,7 +96,7 @@ html, body {
     height: 4px;
     width: 35px;
     cursor: pointer;
-    background: #363636;
+    background: #ffffff;
     display: block;
     content: '';
     -webkit-transition: all 500ms ease-in-out;
@@ -144,8 +144,8 @@ html, body {
   .pure-toggle[data-toggle='left']:checked ~ .pure-toggle-label[data-toggle-label='left'],
   .pure-toggle[data-toggle='right']:checked ~ .pure-toggle-label[data-toggle-label='right'],
   .pure-toggle[data-toggle='top']:checked ~ .pure-toggle-label[data-toggle-label='top'] {
-    border-color: #363636;
-    color: #363636!important;
+    border-color: #ffffff;
+    color: #ffffff!important;
   }
   
   .pure-toggle[data-toggle='left']:checked ~ .pure-toggle-label[data-toggle-label='left'] .pure-toggle-icon,

@@ -1,32 +1,31 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import "./design/Home.css";
 import HeroPhoto from "../images/Logos/cover.png";
 import NavbarHome from "../components/Navbars/navbarHome";
-import DrawerHome from '../components/Drawers/DrawerHome';
+import DrawerHome from "../components/Drawers/DrawerHome";
 import "./design/About.css";
 // import $ from 'jquery'
 
 function Home() {
   // const []
-  // $(window).load(function(){        
+  // $(window).load(function(){
   //   $('emailModal').modal('show');
   //    });
-  
+
   return (
     <>
       <section className="hero is-info is-large" id="heroHomePage">
-          <div className="hero-body">
-            <img src={HeroPhoto} alt="logo" id="heroPhoto" />
+        <div className="hero-body">
+          <div id="drawer-view">
+            <DrawerHome />
           </div>
-        </section>
-      <div id="tablet-mobile">
-        
-        <div id="nav-view">
-        <NavbarHome />
+          <img src={HeroPhoto} alt="logo" id="heroPhoto" />
         </div>
-        <div id="drawer-view">
-        <DrawerHome/>
+      </section>
+      <div id="tablet-mobile">
+        <div id="nav-view">
+          <NavbarHome />
         </div>
         <br />
         <br />
