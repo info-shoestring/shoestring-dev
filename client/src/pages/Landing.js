@@ -7,6 +7,8 @@ import NavbarAuth from "../components/Navbars/NavBarAuth";
 import UserNameCard from "../components/UserNameCard";
 import ProfileImage from "../components/ProfileImage";
 import Payments from "./../components/Payments";
+import Sidemenu from '../components/ProfileBtns/sidemenu';
+import Dropdown from '../components/ProfileBtns/dropdown';
 import moment from "moment";
 import "./design/About.css";
 import "./design/Home.css";
@@ -45,24 +47,23 @@ function Landing() {
     <>
       {currentUserObj !== null ? (
         <div>
-          <section className="hero is-info is-large" id="heroHomePage">
-            <div className="hero-body">
-              <div id="drawer-view">
-               <DrawerAuth/>
-              </div>
-          </div>
+          <section className="hero is-info" id="heroHomePage">
+        <div id="drawer-view">
+          <DrawerAuth />
+        </div>
+        <div className="hero-body"></div>
       </section>
       <div id="tablet-mobile">
         <div id="nav-view">
           <NavbarAuth />
-          <br/>
+          <br />
         </div>
-        <br />
-        <br />
           <div className="outerTile">
             <div className="is-clearfix columns is-centered">
+              <Sidemenu/>
+              <Dropdown/>
               <div
-                className="tile is-9 container column is-fluid"
+                className="tile is-5 container column is-fluid"
                 id="purpleDuck"
               >
                 <div className="tile is-vertical is-parent">
@@ -76,7 +77,6 @@ function Landing() {
                       </p>
                       <p id="member">Member Since: {createdDate}</p>
                       <br />
-                      <ProfileBtns />
                     </div>
                   </div>
                   <div className="tile is-child box is-fullwidth">

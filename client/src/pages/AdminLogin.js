@@ -1,6 +1,6 @@
 import React from 'react';
 import httpAdmin from '../httpAdmin'
-import Nav from '../components/navbar';
+import Nav from '../components/Navbars/navbar';
 import '../pages/design/login.css';
 import * as Yup from 'yup';
 import { useFormik } from 'formik';

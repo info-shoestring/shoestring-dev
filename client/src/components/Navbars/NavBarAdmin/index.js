@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./style.css";
 import { Link, useLocation } from "react-router-dom";
-import Image from '../../images/Logos/vector/default-monochrome-black.svg'
+// import Image from '../../images/Logos/vector/default-monochrome-black.svg'
 import httpAdmin from '../../../httpAdmin'
 
 const NavBarAdmin = (currentUser) => {
@@ -38,9 +38,9 @@ useEffect(() => {
     <div>
       <nav className="navbar" role="navigation" aria-label="main navigation" id="opening-nav">
         <div className="navbar-brand">
-          <Link to="/admin-summary" className="navbar-item">
+          {/* <Link to="/admin-summary" className="navbar-item">
             <img src={Image} alt="logo" width="112" height="28"/>
-          </Link>
+          </Link> */}
 
           <Link to="#" 
           onClick={() => {setisActive(!isActive);}}

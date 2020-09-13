@@ -68,16 +68,19 @@ const ResetPwd = () => {
   return (
     <>
       <section className="hero is-info" id="heroHomePage">
-        <div id="drawer-view">
-          <DrawerHome />
+      <div id="drawer-view">
+            <DrawerHome />
+          </div>
+        <div className="hero-body">
         </div>
-        <div className="hero-body"></div>
       </section>
       <div id="tablet-mobile">
         <div id="nav-view">
           <NavbarHome />
           <br />
         </div>
+        <br />
+        <br />
         <form onSubmit={handleSubmit}>
           <div className="tile is-ancestor">
             <div className="tile is vertical is-7 box" id="tile">
@@ -89,7 +92,7 @@ const ResetPwd = () => {
                   <br></br>
                   <div className="field">
                     <label className="label">Email</label>
-                    <p className="control has-icons-left has-icons-right">
+                    <p className="control">
                       <input
                         className="input"
                         type="email"
@@ -100,21 +103,11 @@ const ResetPwd = () => {
                         value={values.email}
                         onBlur={handleBlur}
                       />
-                      <div id="resetPwd"></div>
-                      {/* {values.email.length <4 &&  touched.email && 'errors' ? (
-                              <p className="errormsg">Please enter a valid email</p>
-                            ): ''} */}
-                      <span className="icon is-small is-left">
-                        <i className="fas fa-envelope"></i>
-                      </span>
-                      <span className="icon is-small is-right">
-                        <i className="fas fa-check"></i>
-                      </span>
                     </p>
                   </div>
                   <div className="field">
                     <label className="label">New Password</label>
-                    <p className="control has-icons-left">
+                    <p className="control">
                       <input
                         className="input"
                         type="password"
@@ -134,15 +127,12 @@ const ResetPwd = () => {
                       ) : (
                         ""
                       )}
-                      <span className="icon is-small is-left">
-                        <i className="fas fa-lock"></i>
-                      </span>
                     </p>
                   </div>
 
                   <div className="field">
                     <label className="label">Confirm Password</label>
-                    <p className="control has-icons-left">
+                    <p className="control">
                       <input
                         className="input"
                         type="password"
@@ -160,12 +150,8 @@ const ResetPwd = () => {
                       ) : (
                         ""
                       )}
-                      <span className="icon is-small is-left">
-                        <i className="fas fa-lock"></i>
-                      </span>
                     </p>
                   </div>
-
                   <div className="field">
                     <p className="control">
                       <button

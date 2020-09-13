@@ -1,5 +1,5 @@
 import React from 'react';
-import NavBarAuth from '../components/NavBarAuth';
+import NavBarAuth from '../components/Navbars/NavBarAuth';
 import WalletProfileCard from './../components/WalletProfileCard';
 import WalletTransfer from './../components/WalletTransfer';
 

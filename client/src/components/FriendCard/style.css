@@ -5,7 +5,7 @@
 }
 
 #pinkDuck{
-    height: 920px!important;
+    height: 410px!important;
     width: 412px!important; 
     overflow-y: scroll;
     position: relative;
@@ -16,6 +16,13 @@
     margin-top: 52px;
     padding-left: 0px;
 }
+
+#remove_friend_icon{
+    color: #363636;
+    margin-right: -75%;
+}
+
+
 
 #seltzer{
     width: 45%!important;

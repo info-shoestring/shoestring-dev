@@ -74,12 +74,12 @@ const NavBarAuth = (currentUser) => {
             </Link>
           </div>
           <div className="navbar-end">
-            <div className="navbar-item">
+            <div className="navbar-item" id="nav-end">
               <a>
                 <Icon path={mdiBellOutline}
                 title="Alerts"
                 size={1.15}
-                color="#ffffff"
+                // color="#ffffff"
                 id="alert"
                 />
               </a>
@@ -87,7 +87,6 @@ const NavBarAuth = (currentUser) => {
                 <Icon path={mdiCogOutline}
                 title="Alerts"
                 size={1.15}
-                color="#ffffff"
                 id="alert"
                 />
               </Link>

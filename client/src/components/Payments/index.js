@@ -32,7 +32,7 @@ function Payments() {
 
    //map all the tranctions for current user transactions
     return (
-        <div className="tile is-child box is-fullwidth" id="payments">
+        <div className="tile is-child is-fullwidth" id="payments">
             <div>
                 <p className="subtitle" >My Transactions</p>
                 {friendResult.length > 0 ?

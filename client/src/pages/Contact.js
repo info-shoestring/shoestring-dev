@@ -19,7 +19,9 @@ function Contact() {
           <NavbarHome />
           <br />
         </div>
-        <div id="tablet-mobile">
+        <br />
+        <br />
+        <div>
           <ContactForm />
         </div>
       </div>

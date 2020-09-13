@@ -16,6 +16,31 @@
     margin-bottom: 5px;
 }
 
+#side_menu{
+    border-right: 5px solid #363636;
+    background-color: #E9EEE7;
+}
+
+#menu-sticky{
+    margin-left: 10%;
+}
+
+#sidemenu_link_design{
+    font-size: 20px;
+}
+
+#sidemenu_link_design:hover{
+    background-color: #E9EEE7!important;
+    color: #3bd389!important;
+
+}
+
+@media only screen and (max-width: 1023px){
+    #menu-sticky, #side_menu{
+        display: none;
+    }
+}
+
 #cat{
     color: #3bd389;
     border-color: #3bd389!important;
