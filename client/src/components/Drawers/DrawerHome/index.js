@@ -1,5 +1,11 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import Icon from "@mdi/react";
+import { mdiHome } from '@mdi/js';
+import { mdiInformation } from '@mdi/js';
+import { mdiEmail } from '@mdi/js';
+import { mdiAccountDetails } from '@mdi/js';
+import { mdiLogin } from '@mdi/js';
 import "./style.css";
 import "../style.css";
 
@@ -31,7 +37,7 @@ function DrawerHome() {
                   className={
                     location.pathname === "/" ? "navbar-item title is-3" : "navbar-item title is-3"
                   }
-                  id="home-link"
+                  id="myprofile-title"
                 >
                   Shoestring
                 </Link>
@@ -44,6 +50,13 @@ function DrawerHome() {
                     }
                     id="home-link"
                   >
+                    <Icon
+                      path={mdiHome}
+                      title="Alerts"
+                      size={.75}
+                      color="#ffffff"
+                      id="alert-icon"
+                    />
                     Home
                   </Link>
                 </li>
@@ -57,6 +70,13 @@ function DrawerHome() {
                     }
                     id="about-link"
                   >
+                    <Icon
+                      path={mdiInformation}
+                      title="Alerts"
+                      size={.75}
+                      color="#ffffff"
+                      id="alert-icon"
+                    />
                     About
                   </Link>
                 </li>
@@ -70,6 +90,13 @@ function DrawerHome() {
                     }
                     id="contact-link"
                   >
+                    <Icon
+                      path={mdiEmail}
+                      title="Alerts"
+                      size={.75}
+                      color="#ffffff"
+                      id="alert-icon"
+                    />
                     Contact
                   </Link>
                 </li>
@@ -84,6 +111,13 @@ function DrawerHome() {
                     }
                     id="signup-link"
                   >
+                    <Icon
+                      path={mdiAccountDetails}
+                      title="Alerts"
+                      size={.75}
+                      color="#ffffff"
+                      id="alert-icon"
+                    />
                     Sign Up
                   </Link>
                 </li>
@@ -97,6 +131,13 @@ function DrawerHome() {
                     }
                     id="login-link"
                   >
+                    <Icon
+                      path={mdiLogin}
+                      title="Alerts"
+                      size={.75}
+                      color="#ffffff"
+                      id="alert-icon"
+                    />
                     Login
                   </Link>
                 </li>

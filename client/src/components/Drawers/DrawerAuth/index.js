@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import httpClient from "../../../httpClient";
-import { mdiBellOutline } from "@mdi/js";
 import Icon from "@mdi/react";
+import { mdiAccountCircle } from '@mdi/js';
+import { mdiAccountMultiplePlus } from '@mdi/js';
+import { mdiCurrencyEur } from '@mdi/js';
+import { mdiBellOutline } from "@mdi/js";
 import { mdiCogOutline } from "@mdi/js";
+import { mdiLogout } from '@mdi/js';
 import "./style.css";
 import "../style.css";
 
@@ -72,6 +76,13 @@ const DrawerAuth = (currentUser) => {
                     }
                     id="myprofile-link"
                   >
+                    <Icon
+                      path={mdiAccountCircle}
+                      title="Alerts"
+                      size={.75}
+                      color="#ffffff"
+                      id="alert-icon"
+                    />
                     My Profile
                   </Link>
                 </li>
@@ -85,6 +96,13 @@ const DrawerAuth = (currentUser) => {
                     }
                     id="findafriend-link"
                   >
+                    <Icon
+                      path={mdiAccountMultiplePlus}
+                      title="Alerts"
+                      size={.75}
+                      color="#ffffff"
+                      id="alert-icon"
+                    />
                     Find Friends
                   </Link>
                 </li>
@@ -97,31 +115,49 @@ const DrawerAuth = (currentUser) => {
                         : "navbar-item"
                     }
                     id="international-link"
-                  >
+                  ><Icon
+                  path={mdiCurrencyEur}
+                  title="Alerts"
+                  size={.75}
+                  color="#ffffff"
+                  id="alert-icon"
+                />
                     International Payments
                   </Link>
                 </li>
                 <hr />
                 <li>
-                  <Link>
+                  <Link to="/alerts" 
+                  className={
+                    location.pathname === "/alerts"
+                      ? "navbar-item"
+                      : "navbar-item"
+                  }
+                  id="alerts-link">
                     <Icon
                       path={mdiBellOutline}
                       title="Alerts"
-                      size={1.15}
-                      color="#363636"
-                      id="alert"
+                      size={.75}
+                      color="#ffffff"
+                      id="alert-icon"
                     />
                     Alerts
                   </Link>
                 </li>
                 <li>
-                  <Link to="/settings">
+                  <Link to="/settings" 
+                  className={
+                    location.pathname === "/settings"
+                      ? "navbar-item"
+                      : "navbar-item"
+                  }
+                  id="settings-link">
                     <Icon
                       path={mdiCogOutline}
                       title="Settings"
-                      size={1.15}
+                      size={.75}
                       color="#ffffff"
-                      id="alert"
+                      id="settings-icon"
                     />
                     Settings
                   </Link>
@@ -136,6 +172,13 @@ const DrawerAuth = (currentUser) => {
                     id="logout-link"
                     onClick={logOut}
                   >
+                    <Icon
+                      path={mdiLogout}
+                      title="Logout"
+                      size={.75}
+                      color="#ffffff"
+                      id="settings-icon"
+                    />
                     Logout
                   </Link>
                 </li>

@@ -2,12 +2,8 @@
     margin-top: 120px!important;
 }
 
-#myprofile-title, #myprofile-link, #findafriend-link, #international-link, #logout-link{
+#myprofile-title, #myprofile-link, #findafriend-link, #international-link, #logout-link, #alerts-link, #settings-link{
     color: white!important
-}
-
-#myprofile-title:hover{
-    background-color: #3bd389!important;
 }
 
 #myprofile-link:hover{
@@ -30,10 +26,38 @@
     background-color: #3bd389!important;
 }
 
+#settings-link{
+    font-size: 20px;
+    margin-right: 50px;
+}
+
+#settings-link:hover{
+    color: #363636!important;
+    background-color: #3bd389!important;
+}
+
+#alerts-link{
+    font-size: 20px;
+    margin-right: 50px;
+}
+
+#alerts-link:hover{
+    color: #363636!important;
+    background-color: #3bd389!important;
+}
+
 #heroHomePage2{
     background-color: #3DD388;
 }
 
 #hamburger-title{
     margin-right: 10%!important;
+}
+
+#alert-icon{
+    margin-right:3%!important;
+}
+
+#settings-icon{
+    margin-right:3%!important;
 }

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import httpClient from "../httpClient";
-import "./design/Landing.css";
 import Friends from "../components/FriendCard";
 import ProfileBtns from "../components/ProfileBtns";
 import DrawerAuth from "../components/Drawers/DrawerAuth";
@@ -11,6 +10,7 @@ import Payments from "./../components/Payments";
 import moment from "moment";
 import "./design/About.css";
 import "./design/Home.css";
+import "./design/Landing.css";
 
 function Landing() {
   const [currentUserObj, setCurrentUserObj] = useState({
