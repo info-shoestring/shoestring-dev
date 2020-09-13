@@ -62,11 +62,11 @@ const Login = (email, password) => {
   //Render the form and display error when error occurs
   return (
     <>
-      <section className="hero is-info is-large" id="heroHomePage">
-        <div className="hero-body">
-          <div id="drawer-view">
+      <section className="hero is-info" id="heroHomePage">
+      <div id="drawer-view">
             <DrawerHome />
           </div>
+        <div className="hero-body">
         </div>
       </section>
       <div id="tablet-mobile">
@@ -74,8 +74,6 @@ const Login = (email, password) => {
           <NavbarHome />
           <br />
         </div>
-        <br />
-        <br />
         <form onSubmit={handleLoginOnsubmit}>
           <div id="loginerrMsg"></div>
           <div className="tile is-ancestor">

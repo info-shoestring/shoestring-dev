@@ -37,7 +37,7 @@ function DrawerHome() {
                   className={
                     location.pathname === "/" ? "navbar-item title is-3" : "navbar-item title is-3"
                   }
-                  id="myprofile-title"
+                  id="home-link"
                 >
                   Shoestring
                 </Link>

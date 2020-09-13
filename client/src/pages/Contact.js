@@ -5,26 +5,23 @@ import ContactForm from "../components/contactForm";
 import "./design/Home.css";
 
 function Contact() {
-
-    return (
+  return (
     <>
-      <section className="hero is-info is-large" id="heroHomePage">
-        <div className="hero-body">
-          <div id="drawer-view">
+      <section className="hero is-info" id="heroHomePage">
+      <div id="drawer-view">
             <DrawerHome />
           </div>
+        <div className="hero-body">
         </div>
       </section>
       <div id="tablet-mobile">
         <div id="nav-view">
           <NavbarHome />
-          <br/>
+          <br />
         </div>
-        <br />
-        <br />
-      <div id="tablet-mobile">
-        <ContactForm />
-      </div>
+        <div id="tablet-mobile">
+          <ContactForm />
+        </div>
       </div>
     </>
   );

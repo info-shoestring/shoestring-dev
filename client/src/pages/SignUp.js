@@ -111,11 +111,11 @@ function SignUp(user) {
   // render the Form and handle validations
   return (
     <>
-      <section className="hero is-info is-large" id="heroHomePage">
-        <div className="hero-body">
-          <div id="drawer-view">
+      <section className="hero is-info" id="heroHomePage">
+      <div id="drawer-view">
             <DrawerHome />
           </div>
+        <div className="hero-body">
         </div>
       </section>
       <div id="tablet-mobile">
@@ -123,8 +123,6 @@ function SignUp(user) {
           <NavbarHome />
           <br />
         </div>
-        <br />
-        <br />
         <form onSubmit={handleSubmit}>
           <div id="errorMsg"></div>
           <div className="tile is-ancestor">

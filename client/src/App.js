@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
@@ -10,19 +10,19 @@ import Wrapper from './components/wrapper';
 import Footer from './components/footer';
 import Landing from './pages/Landing';
 import FindAFriend from './pages/FindAFriend';
-// import TransferMoney from './pages/TransferMoney';
-import MyWallet from './pages/MyWallet';
+import International from './pages/International'
+// import MyWallet from './pages/MyWallet';
 // import CurrencyConverter from './pages/CurrencyConverter';
 import Reset from '../src/pages/ResetPwd'
 import CancelAccount from './pages/CancelAccount';
 import RequestData from './pages/RequestData';
-import AdminLogin from './pages/AdminLogin';
-import AdminSignUp from './pages/AdminSignUp';
-import AdminSummary from './pages/AdminSummary';
-import TransactionHistory from './pages/TransactionHistory';
-import AllUsers from './pages/AllUsers';
-import NewUsers from './pages/NewUsers';
-import TotalIncome from './pages/TotalIncome';
+// import AdminLogin from './pages/AdminLogin';
+// import AdminSignUp from './pages/AdminSignUp';
+// import AdminSummary from './pages/AdminSummary';
+// import TransactionHistory from './pages/TransactionHistory';
+// import AllUsers from './pages/AllUsers';
+// import NewUsers from './pages/NewUsers';
+// import TotalIncome from './pages/TotalIncome';
 import Settings from './pages/Settings';
 
 function App(item) {
@@ -47,8 +47,8 @@ function App(item) {
         {/* Authenticated Pages */}
         <div>
         <Route exact path="/findafriend" component={FindAFriend}/>
-        {/* <Route exact path="/transfermoney" component={TransferMoney}/> */}
-        <Route exact path="/mywallet" component={MyWallet}/>
+        {/* <Route exact path="/mywallet" component={MyWallet}/> */}
+        <Route exact path="/international-payments" component={International}/>
         {/* <Route exact path="/currencyconverter" component={CurrencyConverter}/> */}
         <Route exact path="/cancelaccount" component={CancelAccount}/>
         <Route exact path="/requestdata" component={RequestData}/>
@@ -57,13 +57,13 @@ function App(item) {
 
         {/* Admin routes */}
         <div>
-        <Route exact path="/admin-12152011" component={AdminLogin}/>
+        {/* <Route exact path="/admin-12152011" component={AdminLogin}/>
         <Route exact path="/admin-sign-up-02121986" component={AdminSignUp}/>
         <Route exact path="/admin-summary" component={AdminSummary}/>
         <Route exact path="/transaction-history" component={TransactionHistory}/>
         <Route exact path="/all-users" component={AllUsers}/>
         <Route exact path="/new-users-last-month" component={NewUsers}/>
-        <Route exact path="/total-income" component={TotalIncome}/> 
+        <Route exact path="/total-income" component={TotalIncome}/>  */}
         </div>
       </Wrapper>
     </div>

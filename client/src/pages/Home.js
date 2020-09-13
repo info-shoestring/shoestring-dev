@@ -15,11 +15,11 @@ function Home() {
 
   return (
     <>
-      <section className="hero is-info is-large" id="heroHomePage">
+      <section className="hero is-info" id="heroHomePage">
+        <div id="drawer-view">
+          <DrawerHome />
+        </div>
         <div className="hero-body">
-          <div id="drawer-view">
-            <DrawerHome />
-          </div>
           <img src={HeroPhoto} alt="logo" id="heroPhoto" />
         </div>
       </section>

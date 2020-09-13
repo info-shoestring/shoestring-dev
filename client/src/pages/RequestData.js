@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import NavBarAuth from '../components/NavBarAuth';
+import NavBarAuth from '../components/Navbars/NavBarAuth';
 import $ from 'jquery';
 import "./design/Home.css"
 import "./design/CancelAccount.css"

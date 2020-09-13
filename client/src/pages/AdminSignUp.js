@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from '../components/navbar';
+import Navbar from '../components/Navbars/';
 import '../pages/design/signup.css'
 import httpAdmin from '../httpAdmin'
 import $ from 'jquery'

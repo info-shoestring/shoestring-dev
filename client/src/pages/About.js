@@ -6,23 +6,19 @@ import "./design/About.css";
 import "./design/Home.css";
 
 function About() {
-  
   return (
     <>
-      <section className="hero is-info is-large" id="heroHomePage">
-        <div className="hero-body">
-          <div id="drawer-view">
-            <DrawerHome />
-          </div>
+      <section className="hero is-info" id="heroHomePage">
+        <div id="drawer-view">
+          <DrawerHome />
         </div>
+        <div className="hero-body"></div>
       </section>
       <div id="tablet-mobile">
         <div id="nav-view">
           <NavbarHome />
-          <br/>
+          <br />
         </div>
-        <br />
-        <br />
         <div className="tile is-ancestor">
           <div className="tile is vertical is-9 is-clearfix columns" id="tile">
             <div className="column">
