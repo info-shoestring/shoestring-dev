@@ -4,6 +4,7 @@ import AddImage from "../AddImage";
 import httpClient from "../../httpClient";
 import PersonalInfo from '../PersonalInfo/PersonalInfo';
 import Plaid from '../plaidLink';
+import CancelRequestData from '../PersonalInfo/CancelRequestData';
 import './style.css';
 
 function EditSettings(currentUser) {
@@ -24,7 +25,7 @@ function EditSettings(currentUser) {
   return (
     <>
       {currentUserObj.currentUser !== null ? (
-        <div className="column is-two-thirds content" id="personal-information">
+        <div className="column is-9 content" id="personal-information">
           <div className="box">
             <h2 className="title is-3">Update your account</h2>
             <p>
@@ -47,8 +48,14 @@ function EditSettings(currentUser) {
           </div>
           <br/>
           <div id="edit-bank-informaion">
-              <div className="box " >
+              <div className="box" >
                 <Plaid/>
+              </div>
+          </div>
+          <br/>
+          <div id="cancel_request_data"> 
+              <div className="box">
+                <CancelRequestData/>
               </div>
           </div>
         </div>

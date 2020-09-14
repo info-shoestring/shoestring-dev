@@ -1,0 +1,12 @@
+#settings_menu_links{
+    font-size: 20px;
+}
+
+#settings_menu_links:hover{
+    background-color: #E9EEE7!important;
+    color: #3bd389!important;
+}
+
+#menu-stick{
+    margin-left: 10%;
+}

@@ -22,7 +22,7 @@ const Plaid = () => {
   const { open, ready, error } = usePlaidLink(config);
   return (
     <>
-      <div className="">
+      <div>
         <p className="subtitle" id="formTitle">
           Update your Bank Account
         </p>
