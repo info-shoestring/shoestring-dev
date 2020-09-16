@@ -2,6 +2,7 @@ import React from 'react';
 import './style.css';
 
 function WalletTransfer() {
+    
     return (
         <section>
             <div className="tile is-ancestor columns">
@@ -36,6 +37,8 @@ function WalletTransfer() {
                 </div>
             </div>    
             </section>
+            
+            
     );
 }
 
