@@ -60,11 +60,8 @@ function Landing() {
             <div className="outerTile">
               <div className="is-clearfix columns is-centered">
                 <Sidemenu />
-                <div>
                   <br />
                   <br />
-                </div>
-
                 <div
                   className="tile is-5 container column is-fluid"
                   id="purpleDuck"
@@ -74,7 +71,6 @@ function Landing() {
                       <div className="is-centered">
                         <UserNameCard />
                         <ProfileImage />
-
                         <br />
                         <p id="funds">
                           Funds Available: $ {currentUserObj.balance}

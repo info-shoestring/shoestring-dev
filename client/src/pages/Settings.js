@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import DrawerAuth from "../components/Drawers/DrawerAuth";
 import NavbarAuth from "../components/Navbars/NavBarAuth";
+import SidemenuSettings from "../components/ProfileBtns/sidemenuSettings";
 import { FaArrowCircleUp } from "react-icons/fa";
 import "../pages/design/signup.css";
 import "./design/Settings.css";
@@ -48,68 +49,11 @@ function Settings() {
                 <br />
               </div>
               <br />
-              <div className="tile is-ancestor">
-                <div className="tile is-vertical" id="tile">
+            <div className="outerTile">
+              <div className="is-clearfix columns is-centered">
+                <SidemenuSettings/>
                   <article className="tile is-child notification">
                     <div className="columns">
-                      <div className="column is-2" id="side_menu">
-                        <div className="menu sticky" id="menu-stick">
-                          <br />
-                          <br />
-                          <ul className="menu-list" id="settings_menu_links">
-                            <li>
-                              <a
-                                href="#personal-information"
-                                id="settings_menu_links"
-                              >
-                                Personal Information
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#edit-password" id="settings_menu_links">
-                                Password
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#edit-photo" id="settings_menu_links">
-                                Photo
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href="#edit-bank-informaion"
-                                id="settings_menu_links"
-                              >
-                                Bank Information
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href="#cancel_request_data"
-                                id="settings_menu_links"
-                              >
-                                Cancel My Account
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href="#cancel_request_data"
-                                id="settings_menu_links"
-                              >
-                                Request My Data
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href="#cancel_request_data"
-                                id="settings_menu_links"
-                              >
-                                Return
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
                       <div id="editSettings">
                         <EditSettings />
                         <ScrollArrow/>
