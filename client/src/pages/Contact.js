@@ -3,6 +3,7 @@ import DrawerHome from "../components/Drawers/DrawerHome";
 import NavbarHome from "../components/Navbars/navbarHome";
 import ContactForm from "../components/contactForm";
 import "./design/Home.css";
+import"./design/Contact.css"
 
 function Contact() {
   return (
@@ -25,6 +26,15 @@ function Contact() {
           <ContactForm />
         </div>
       </div>
+      <div>
+      <footer className="contact-footer">
+        <div className="content has-text-centered">
+          <p>
+            © 2020 Shoestring
+          </p>
+        </div>
+      </footer>
+    </div>  
     </>
   );
 }

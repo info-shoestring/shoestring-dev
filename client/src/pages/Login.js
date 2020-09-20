@@ -8,6 +8,7 @@ import DrawerHome from "../components/Drawers/DrawerHome";
 import NavbarHome from "../components/Navbars/navbarHome";
 import "./design/About.css";
 import "./design/Home.css";
+import "./design/Contact.css"
 
 //Setup  validation condition on the schema using Yup
 const validationSchenma = Yup.object({
@@ -74,6 +75,8 @@ const Login = (email, password) => {
           <NavbarHome />
           <br />
         </div>
+        <br />
+        <br />
         <form onSubmit={handleLoginOnsubmit}>
           <div id="loginerrMsg"></div>
           <div className="tile is-ancestor">
@@ -145,6 +148,13 @@ const Login = (email, password) => {
             </div>
           </div>
         </form>
+        <footer className="contact-footer">
+        <div className="content has-text-centered">
+          <p>
+            © 2020 Shoestring
+          </p>
+        </div>
+      </footer>
       </div>
     </>
   );

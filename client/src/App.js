@@ -6,7 +6,6 @@ import Contact from './pages/Contact';
 import Login from './pages/Login';
 import SignUp from './pages/SignUp';
 import Wrapper from './components/wrapper';
-import Footer from './components/footer';
 import Landing from './pages/Landing';
 import FindAFriend from './pages/FindAFriend';
 import International from './pages/International'
@@ -28,6 +27,7 @@ function App(item) {
    
   return (
     <>
+    <div>
     <Router>
     <div>
       <Wrapper>
@@ -66,7 +66,7 @@ function App(item) {
       </Wrapper>
     </div>
     </Router>
-    <Footer/>
+    </div>
     </>
   );
 }

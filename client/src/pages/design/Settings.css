@@ -5,8 +5,10 @@
 #settings_menu_links:hover{
     background-color: #E9EEE7!important;
     color: #3bd389!important;
+    margin-top: -10px;
 }
 
 #menu-stick{
-    margin-left: 10%;
+    margin-left: 8%;
+    margin-top: -10px;
 }

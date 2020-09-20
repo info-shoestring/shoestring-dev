@@ -28,7 +28,6 @@ function Home() {
           <NavbarHome />
         </div>
         <br />
-        <br />
         <div className="tile is-ancestor">
           <div className="tile is vertical is-10 is-clearfix columns" id="tile">
             <div className="column">
@@ -63,6 +62,17 @@ function Home() {
           </div>
         </div>
       </div>
+      <br />
+        <br />
+      <div>
+      <footer className="footer">
+        <div className="content has-text-centered">
+          <p>
+            © 2020 Shoestring
+          </p>
+        </div>
+      </footer>
+    </div> 
     </>
   );
 }

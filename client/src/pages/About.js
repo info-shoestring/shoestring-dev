@@ -49,17 +49,27 @@ function About() {
               <p className="title is-2" id="team">
                 Privacy, Security & Terms of Use
               </p>
-              <p>Privacy Policy</p>
-              <p>Terms of Use</p>
-              <p>How do you protect my Financial Information?</p>
-              <p>How do you protect my Account?</p>
-              <p>How can I better protect myself?</p>
-              <p>Questions</p>
+              <p className="title is-4">Privacy Policy</p>
+              <p className="title is-4">Terms of Use</p>
+              <p className="title is-4">How do you protect my Financial Information?</p>
+              <p className="title is-4">How do you protect my Account?</p>
+              <p className="title is-4">How can I better protect myself?</p>
+              <p className="title is-4">Questions</p>
+              
             </div>
           </div>
         </div>
         <br />
       </div>
+      <div>
+      <footer className="footer">
+        <div className="content has-text-centered">
+          <p>
+            © 2020 Shoestring
+          </p>
+        </div>
+      </footer>
+    </div>
     </>
   );
 }

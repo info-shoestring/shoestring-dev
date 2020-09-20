@@ -6,11 +6,11 @@ import "./style.css";
 
 const customStyles = {
   content: {
-    top: "50%",
+    top: "60%",
     left: "50%",
     right: "auto",
     bottom: "auto",
-    marginRight: "-48%",
+    marginRight: "-45%",
     transform: "translate(-50%, -50%)",
     padding: "0",
     border: "#ffffff",

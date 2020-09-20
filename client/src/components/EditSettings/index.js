@@ -25,7 +25,7 @@ function EditSettings(currentUser) {
   return (
     <>
       {currentUserObj.currentUser !== null ? (
-        <div className="column is-9 content" id="personal-information">
+        <div className="column is-10 content" id="personal-information">
           <div className="box">
             <h2 className="title is-3">Update your account</h2>
             <p>
