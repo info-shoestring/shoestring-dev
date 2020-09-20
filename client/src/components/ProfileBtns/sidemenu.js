@@ -181,7 +181,7 @@ function Sidemenu() {
               </form>
             </li>
             <li>
-              <Link to="/settings#edit-bank-informaion" id="sidemenu_link_design">My Bank Account</Link>
+              <a href="/settings" id="sidemenu_link_design">Settings</a>
             </li>
           </ul>
         </div>

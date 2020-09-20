@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import httpClient from "../httpClient";
 import Friends from "../components/FriendCard";
-// import ProfileBtns from "../components/ProfileBtns";
 import DrawerAuth from "../components/Drawers/DrawerAuth";
 import NavbarAuth from "../components/Navbars/NavBarAuth";
 import UserNameCard from "../components/UserNameCard";
@@ -61,7 +60,11 @@ function Landing() {
             <div className="outerTile">
               <div className="is-clearfix columns is-centered">
                 <Sidemenu />
-                <Dropdown />
+                <div>
+                  <br />
+                  <br />
+                </div>
+
                 <div
                   className="tile is-5 container column is-fluid"
                   id="purpleDuck"
@@ -71,11 +74,16 @@ function Landing() {
                       <div className="is-centered">
                         <UserNameCard />
                         <ProfileImage />
+
                         <br />
                         <p id="funds">
                           Funds Available: $ {currentUserObj.balance}
                         </p>
                         <p id="member">Member Since: {createdDate}</p>
+                        <div id="dropdown-menu-display">
+                          <br />
+                          <Dropdown />
+                        </div>
                         <br />
                       </div>
                     </div>
