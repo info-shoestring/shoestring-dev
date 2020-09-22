@@ -26,15 +26,6 @@ function Contact() {
           <ContactForm />
         </div>
       </div>
-      <div>
-      <footer className="contact-footer">
-        <div className="content has-text-centered">
-          <p>
-            © 2020 Shoestring
-          </p>
-        </div>
-      </footer>
-    </div>  
     </>
   );
 }

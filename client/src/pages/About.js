@@ -61,15 +61,6 @@ function About() {
         </div>
         <br />
       </div>
-      <div>
-      <footer className="footer">
-        <div className="content has-text-centered">
-          <p>
-            © 2020 Shoestring
-          </p>
-        </div>
-      </footer>
-    </div>
     </>
   );
 }
