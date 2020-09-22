@@ -43,7 +43,7 @@ function Settings() {
               </div>
               <div className="hero-body"></div>
             </section>
-            <div id="tablet-mobile">
+            <div id="tablet-mobile-auth">
               <div id="nav-view">
                 <NavbarAuth />
                 <br />
@@ -55,10 +55,10 @@ function Settings() {
                   <article className="tile is-child notification">
                     <div className="columns">
                       <div id="editSettings">
+                        <br/>
                         <EditSettings />
                         <ScrollArrow/>
                       </div>
-                      
                     </div>
                   </article>
                 </div>

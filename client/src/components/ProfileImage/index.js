@@ -80,16 +80,6 @@ function ProfileImage() {
                                             <img id="myPhoto" className="is-rounded"  src={item.image} alt="myPhoto" />
                                         </figure>
                                     )}
-                                {/* <br />
-                                <div className="is centered">    
-                                <input 
-                                    type="file"
-                                    name="file"
-                                    placeholder="Upload image"
-                                    onChange={uploadImage}
-                                     
-                                />
-                                </div> */}
                             </div>
                           )
                           } 

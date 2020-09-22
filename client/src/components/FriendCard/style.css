@@ -1,6 +1,6 @@
 #userPhoto{
-    height: 150px!important;
-    width: 150px!important;
+    height: 200px!important;
+    width: 200px!important;
     margin: 0 auto;
 }
 
@@ -9,6 +9,17 @@
     width: 412px!important; 
     overflow-y: scroll;
     position: relative;
+}
+
+#send_money_icon{
+    margin-top: -35px;
+    margin-left: -110px;
+    cursor: pointer;
+    color: #3bd389
+}
+
+#send_money_icon:hover{
+    color: #363636
 }
 
 #craftBrew{
@@ -22,7 +33,12 @@
     margin-right: -75%;
 }
 
-
+#send-money-photo{
+    height: 40px!important;
+    width: 40px!important;
+    border-radius: 25px;
+    margin-right: 5px;
+}
 
 #seltzer{
     width: 45%!important;
@@ -63,11 +79,9 @@
     font-weight: 400;
 }
 .errMsg{
-    padding: 7px;  
-   /* border: 1px solid red;  */
-  color: red;
-  /* text-align: center;   */
-  font-size: large;
+    padding: 7px;
+    color: red;
+    font-size: large;
   }
 
   @media screen and (max-width: 768px){

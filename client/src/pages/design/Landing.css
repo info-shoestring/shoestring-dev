@@ -16,4 +16,7 @@
     #dropdown-menu-display{
         display: block;
     }
+    #purpleDuck{
+        padding: 0!important;
+    }
 }

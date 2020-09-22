@@ -9,7 +9,7 @@ function Contact() {
   return (
     <>
       <section className="hero is-info" id="heroHomePage">
-      <div id="drawer-view">
+        <div id="drawer-view">
             <DrawerHome />
           </div>
         <div className="hero-body">

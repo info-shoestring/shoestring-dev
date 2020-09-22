@@ -16,7 +16,7 @@ function ContactForm() {
         <div className="tile is-ancestor">
             <div className="tile is vertical is-7 box" id="tile">
                 <div className="tile is-parent">
-                    <article className="tile is-child notification is-dark">
+                    <article className="tile is-child notification is-dark" id="contact_container">
                     <p className="title" id="formTitle">Contact us</p>
                         <form action="https://formspree.io/mrgkrawy" method="POST" target="_blank" id='myForm'>
                             <div className="field" id="contact_me">
@@ -35,7 +35,7 @@ function ContactForm() {
                             <label className="label">Leave a Message</label>
                             <textarea className="textarea" name="message" placeholder="Leave your comments . . .">
                             </textarea>
-                            <br />
+                            {/* <br /> */}
                             <div className="field">
                                 <p className="control">
                                     <button className="button is-light" onClick={useEffect} type="submit" id="contactMe">

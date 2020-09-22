@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "./style.css";
-import { Link, withRouter } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 import Modal from "react-modal";
 import Icon from "@mdi/react";
 import { mdiCloseCircle } from "@mdi/js";
+import { mdiCurrencyUsdCircle } from '@mdi/js';
 import httpClient from "../../httpClient.js";
 import * as Yup from "yup";
-import { useFormik, yupToFormErrors } from "formik";
+import { useFormik } from "formik";
 
 const customStyles = {
   content: {
@@ -200,7 +201,7 @@ function Card() {
   return (
     <>
       <br />
-      <div className="tile is-3 container column is-fluid" id="craftBrew">
+      <div className="tile is-4 container column is-fluid" id="craftBrew">
         <div className="tile is-child box has-text-centered" id="pinkDuck">
           {friendResult.map((item) => {
             return (
@@ -223,14 +224,20 @@ function Card() {
                     <div className="image has-text-centered" id="friendPic">
                       <div className="is-centered" id="send_mula">
                         <img
-                          className="is-rounded is-48x48"
+                          className="is-rounded"
                           id="userPhoto"
                           src={item.image}
                           alt={item.name}
                         />
-                        <div className="middle">
-                            <div className="text">Send Money</div>
-                        </div>
+                        <Icon
+                      type="button"
+                      path={mdiCurrencyUsdCircle}
+                      title="Send Money"
+                      size={2.5}
+                      id="send_money_icon"
+                      data-newfriend={item._id}
+                      onClick={sendMoneytofriend}
+                    />
                       </div>
                       {item.name}
                     </div>
@@ -239,17 +246,6 @@ function Card() {
                     <h3 className="has-text-centered" id="location">
                       {item.city}
                     </h3>
-                  </div>
-                  <br />
-                  <div>
-                    <a
-                      className="button is-light saveBtn"
-                      id="seltzer"
-                      data-newfriend={item._id}
-                      onClick={sendMoneytofriend}
-                    >
-                      Send Money
-                    </a>
                   </div>
                   <hr />
 
@@ -262,6 +258,7 @@ function Card() {
                     >
                       <div className="modal-card">
                         <header className="modal-card-head">
+                          <img id="send-money-photo" src={sendMoney.image} alt={sendMoney.name}/>
                           <p className="modal-card-title">
                             Send Money to {sendMoney.name}
                           </p>
@@ -282,8 +279,6 @@ function Card() {
                               <span class="select">
                                 <select>
                                   <option>$</option>
-                                  <option>£</option>
-                                  <option>€</option>
                                 </select>
                               </span>
                             </p>
@@ -358,7 +353,9 @@ function Card() {
                             onClick={closeModal2}
                           ></button>
                         </header>
-                        <section className="modal-card-body"></section>
+                        <section className="modal-card-body">
+                          <p>Removing {deleteFriend.name} means you can no longer send money to them until you add them back to your friends list. This will not stop any pending payments or return any money sent to {deleteFriend.name}.</p>
+                        </section>
                         <footer className="modal-card-foot">
                           <button
                             className="button is-success"

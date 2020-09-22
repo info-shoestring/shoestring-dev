@@ -1,10 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./design/Home.css";
 import HeroPhoto from "../images/Logos/cover.png";
 import NavbarHome from "../components/Navbars/navbarHome";
 import DrawerHome from "../components/Drawers/DrawerHome";
+import Facebook from '../images/socialMedia/facebook.svg';
+import Instagram from '../images/socialMedia/instagram.svg';
+import Pinterest from '../images/socialMedia/pinterest.svg';
 import "./design/About.css";
+import "./design/Home.css";
 // import $ from 'jquery'
 
 function Home() {
@@ -29,7 +32,7 @@ function Home() {
         </div>
         <br />
         <div className="tile is-ancestor">
-          <div className="tile is vertical is-10 is-clearfix columns" id="tile">
+          <div className="tile is-vertical is-10 is-clearfix columns" id="tile">
             <div className="column">
               <p className="title">Welcome to Shoestring!</p>
               <br />
@@ -66,10 +69,45 @@ function Home() {
         <br />
       <div>
       <footer className="footer">
-        <div className="content has-text-centered">
-          <p>
+        <div className="content">
+          <br/>
+          <div className="columns">
+            <div className="column is-one-fifth" id="resources_info">
+              <p className="subtitle is-6">Resources</p>
+              <p id="footer-links">Security</p>
+              <p id="footer-links">Privacy Policy</p>
+              <p id="footer-links">Terms of Use</p>
+              <p id="footer-links">FAQ's</p>
+              <p id="footer-links">Contact Us</p>
+            </div>
+            <div className="column is-one-fifth" id="account_info">
+              <p className="subtitle is-6">Account</p>
+              <p id="footer-links">Security</p>
+              <p id="footer-links">Privacy Policy</p>
+              <p id="footer-links">Terms of Use</p>
+              <p id="footer-links">FAQ's</p>
+              
+            </div>
+            <div className="column is-one-fifth" id="other_info">
+              <p className="subtitle is-6">Resources</p>
+              <p id="footer-links">Security</p>
+              <p id="footer-links">Privacy Policy</p>
+              <p id="footer-links">Terms of Use</p>
+              <p id="footer-links">FAQ's</p>
+            </div>
+            <div className="column is-one-fifth" id="social_icons">
+              <p className="subtitle is-6">Join Us</p>
+              <img id="facebook_link" src={Facebook} alt="facebook"/>
+              <img id="instagram_link" src={Instagram} alt="instagram"/>
+              <img id="pinterest_link" src={Pinterest} alt="pinterest"/>
+            </div>
+          </div>
+          <hr/>
+          <div className="columns">
+          <p className="has-text-centered column is-full-width" id="copyright">
             © 2020 Shoestring
           </p>
+          </div>
         </div>
       </footer>
     </div> 

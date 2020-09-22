@@ -71,7 +71,7 @@ const Password = () => {
             <label className="label">
               Enter your the email associated with the account
             </label>
-            <p className="control has-icons-left">
+            <div className="control">
               <input
                 className="input"
                 type="email"
@@ -82,13 +82,10 @@ const Password = () => {
                 value={values.email}
                 onBlur={handleBlur}
               />
-              <div id="resetPwd"></div>
-              <span className="icon is-small is-left">
-                <i className="fas fa-envelope"></i>
-              </span>
-            </p>
+              {/* <div id="resetPwd"></div> */}
+            </div>
             <label className="label">Enter your new password</label>
-            <p className="control has-icons-left">
+            <div className="control">
               <input
                 className="input"
                 type="password"
@@ -104,12 +101,10 @@ const Password = () => {
               ) : (
                 ""
               )}
-              <span className="icon is-small is-left">
-                <i className="fas fa-lock"></i>
-              </span>
-            </p>
+              
+            </div>
             <label className="label">Confirm your new password</label>
-            <p className="control has-icons-left">
+            <div className="control">
               <input
                 className="input"
                 type="password"
@@ -127,10 +122,7 @@ const Password = () => {
               ) : (
                 ""
               )}
-              <span className="icon is-small is-left">
-                <i className="fas fa-lock"></i>
-              </span>
-            </p>
+            </div>
             <div className="field is-grouped">
               <div className="control">
                 <button

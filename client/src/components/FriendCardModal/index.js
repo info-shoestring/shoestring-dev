@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from "react";
 import './style.css';
-import { Link, withRouter } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import Modal from 'react-modal';
+import Icon from "@mdi/react";
+import { mdiCloseCircle } from "@mdi/js";
+import { mdiCurrencyUsdCircle } from '@mdi/js';
 import httpClient from "../../httpClient.js";
 import * as Yup from 'yup';
 import { useFormik, yupToFormErrors } from 'formik';
@@ -12,7 +15,7 @@ const customStyles = {
         left: '50%',
         right: 'auto',
         bottom: 'auto',
-        marginRight: '-50%',
+        marginRight: '-48%',
         transform: 'translate(-50%, -50%)',
         padding: '0',
         border: '#ffffff',
@@ -176,26 +179,48 @@ function FriendsCard() {
                     {friendResult.map(item => {
                         return (
                             <div>
-                                <article key={item._id} className="is-scrollable friend" id="friendSelector" >
-                                    <figure id="block">
-                                        <p className="image has-text-centered" id="friendPic">
-                                            <div className="is-centered">
-                                                <img className="is-rounded is-48x48" id="userPhoto" src={item.image} alt={item.name} />
-                                            </div>
-                                            {item.name}
-                                        </p>
-                                    </figure>
-                                    <div>
-                                        <h3 className="has-text-centered" id="location">{item.city}</h3>
-                                    </div>
-                                    <br />
-                                    <div>
-                                        <a className="button is-light saveBtn" id="seltzer" data-newfriend={item._id} onClick={sendMoneytofriend} >Send Money</a>
-
-                                        <a className="button is-light" id="seltzer2" data-removefriend={item._id} onClick={removeAfriend}>Remove Friend</a>
-
-                                    </div>
-                                    <hr />
+                                <article
+                  key={item._id}
+                  className="is-scrollable friend"
+                  id="friendSelector"
+                >
+                  <figure id="block">
+                    <Icon
+                      type="button"
+                      path={mdiCloseCircle}
+                      title="Remove Friend"
+                      size={1.15}
+                      id="remove_friend_icon"
+                      data-removefriend={item._id}
+                      onClick={removeAfriend}
+                    />
+                    <div className="image has-text-centered" id="friendPic">
+                      <div className="is-centered" id="send_mula">
+                        <img
+                          className="is-rounded"
+                          id="userPhoto"
+                          src={item.image}
+                          alt={item.name}
+                        />
+                        <Icon
+                      type="button"
+                      path={mdiCurrencyUsdCircle}
+                      title="Send Money"
+                      size={2.5}
+                      id="send_money_icon"
+                      data-newfriend={item._id}
+                      onClick={sendMoneytofriend}
+                    />
+                      </div>
+                      {item.name}
+                    </div>
+                  </figure>
+                  <div>
+                    <h3 className="has-text-centered" id="location">
+                      {item.city}
+                    </h3>
+                  </div>
+                  <hr />
 
                                     <form onSubmit={handleSubmit}>
                                         <Modal

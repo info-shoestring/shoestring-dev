@@ -1,0 +1,29 @@
+#cancel_btn{
+    color: #3bd389!important;
+    border-color: white;
+    background-color: #f5f5f5;
+    position: relative;
+    margin: 0 auto;
+    height: 50px;
+   
+}
+
+#cancel_btn:hover{
+    background-color: #363636;
+    color: #f5f5f5;
+}
+
+#request_btn{
+    color: #3bd389!important;
+    border-color: white;
+    background-color: #f5f5f5;
+    position: relative;
+    margin: 0 auto;
+    height: 50px;
+    
+}
+
+#request_btn:hover{
+    background-color: #363636;
+    color: #f5f5f5;
+}

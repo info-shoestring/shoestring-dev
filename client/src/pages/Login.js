@@ -70,7 +70,7 @@ const Login = (email, password) => {
         <div className="hero-body">
         </div>
       </section>
-      <div id="tablet-mobile">
+      <div id="tablet-mobile-auth">
         <div id="nav-view">
           <NavbarHome />
           <br />

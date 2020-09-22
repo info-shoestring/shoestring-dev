@@ -6,3 +6,17 @@
 #addFile{
     margin: 0 auto;
 }
+
+@media only screen and (max-width: 500px){
+    #myPhoto{
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    #myPhoto{
+        height: 150px;
+        width: 150px;
+    }
+}

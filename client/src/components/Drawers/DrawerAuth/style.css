@@ -2,6 +2,12 @@
     margin-top: 120px!important;
 }
 
+#drawer_photo{
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
+}
+
 #myprofile-title, #myprofile-link, #findafriend-link, #international-link, #logout-link, #alerts-link, #settings-link{
     color: white!important
 }

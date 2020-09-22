@@ -1,14 +1,29 @@
 @media only screen and (max-width: 768px) {
-    #tablet-mobile{
+    #tablet-mobile, #tablet-mobile-auth{
        margin-right: 10%;
        margin-left: 10%;
+    }   
+}
+
+@media only screen and (max-width: 425px) {
+    #tablet-mobile-auth{
+       margin-right: 0%;
+       margin-left: 3%;
+    }   
+}
+
+@media only screen and (max-width: 350px) {
+    #tablet-mobile-auth{
+        margin-right: -20px; 
+        margin-left: 20px;
     }   
 }
 
 .footer{
     margin-top: 1rem;
     padding: 1rem;
-    background-color: #3bd389;
+    background-color: #E9EEE7;
+    border-top: 2px solid lightgrey;
     position: sticky;
     bottom: 0;
     left: 0;

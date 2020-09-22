@@ -52,7 +52,7 @@ function Landing() {
             </div>
             <div className="hero-body"></div>
           </section>
-          <div id="tablet-mobile">
+          <div id="tablet-mobile-auth">
             <div id="nav-view">
               <NavbarAuth />
               <br />

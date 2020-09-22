@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import './style.css'
 
 const CancelRequestData = () => {
     return (
@@ -12,16 +13,16 @@ const CancelRequestData = () => {
             <Link
                 to="/cancelaccount"
                 type="button"
-                className="button column is-centered"
-                id="fluffyduck"            
+                className="button column is-two-fifths is-centered"
+                id="cancel_btn"            
             >
                 Cancel Account
             </Link>
             <Link
                 to="/requestdata"
                 type="button"
-                className="button column is-centered"
-                id="fluffyduck"  
+                className="button column is-two-fifths is-centered"
+                id="request_btn"  
             >
                 Data Request
             </Link>

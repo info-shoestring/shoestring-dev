@@ -89,7 +89,7 @@ useEffect(() => {
                     Edit your name
                   </p>
                   <div className="field">
-                    <div className="control has-icons-left">
+                    <div className="control">
                       <input
                         className="input"
                         type="text"
@@ -99,12 +99,6 @@ useEffect(() => {
                         value={values.name}
                         onBlur={handleBlur} 
                       />
-                      {/* {values.name.length < 1 && touched.name && 'errors' ? (
-                    <p className="errMsg">Please enter your name</p>
-                            ): ''} */}
-                      <span className="icon is-small is-left">
-                        <i className="fas fa-user-astronaut"></i>
-                      </span>
                     </div>
                   </div>
                 </form>
@@ -117,7 +111,7 @@ useEffect(() => {
                     Edit your phone number
                   </p>
                   <div className="field">
-                    <div className="control has-icons-left">
+                    <div className="control">
                       <input
                         className="input"
                         type="text"
@@ -130,9 +124,6 @@ useEffect(() => {
                       {!values.phone.match(phoneno) &&  touched.phone && 'errors' ? (
                               <p className="errMsg">Please enter a valid Phone</p>
                             ): ''}
-                      <span className="icon is-small is-left">
-                        <i className="fas fa-mobile-alt"></i>
-                      </span>
                     </div>
                   </div>
                 </form>
@@ -145,7 +136,7 @@ useEffect(() => {
                     Edit your location
                   </p>
                   <div className="field">
-                    <div className="control has-icons-left">
+                    <div className="control">
                       <input
                         className="input"
                         type="text"
@@ -158,11 +149,8 @@ useEffect(() => {
                       {values.city.length <2 &&  touched.city && 'errors' ? (
                         <p className="errMsg">Please enter a valid City</p>
                     ): ''}
-                      <span className="icon is-small is-left">
-                        <i className="fas fa-city"></i>
-                      </span>
                     </div>
-                    <div className="control has-icons-left">
+                    <div className="control">
                       <input
                         className="input"
                         type="text"
@@ -175,9 +163,6 @@ useEffect(() => {
                       {values.state.length < 2 &&  touched.state && 'errors' ? (
                     <p className="errMsg">Please enter a valid State</p>
                     ): ''}
-                      <span className="icon is-small is-left">
-                        <i className="far fa-compass"></i>
-                      </span>
                     </div>
                   </div>
                 </form>
@@ -190,9 +175,9 @@ useEffect(() => {
                     Edit your email
                   </p>
                   <div className="field">
-                    <div className="control has-icons-left has-icons-right">
+                    <div className="control">
                       <input
-                        className="input "
+                        className="input"
                         type="email"
                         name="email"
                         placeholder={friendResult.email}
@@ -203,9 +188,6 @@ useEffect(() => {
                       {!values.email.match(emailVal) &&  touched.email && 'errors' ? (
                         <p className="errMsg">Please enter a valid Email</p>
                       ): ''}
-                      <span className="icon is-small is-left">
-                        <i className="fas fa-envelope"></i>
-                      </span>
                     </div>
                     <div className="field is-grouped">
                       <div className="control">

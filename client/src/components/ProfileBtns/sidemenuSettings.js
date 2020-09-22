@@ -1,11 +1,11 @@
 import React from 'react';
+import './style.css';
 
 const SidemenuSettings = () => {
     return(
         <>
         <div className="is-2 column" id="side_menu">
         <div className="menu sticky" id="menu-sticky">
-          <br />
           <br />
           <ul className="menu-list"
             id="settings_menu_links">
@@ -49,14 +49,6 @@ const SidemenuSettings = () => {
                 id="settings_menu_links"
               >
                 Request My Data
-              </a>
-            </li>
-            <li>
-              <a
-                href="#cancel_request_data"
-                id="settings_menu_links"
-              >
-                Return
               </a>
             </li>
           </ul>
