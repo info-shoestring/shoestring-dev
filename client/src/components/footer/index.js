@@ -8,7 +8,7 @@ function Footer() {
 
   return (
     <div>
-      <footer className="footer">
+      <footer className="footer" id="fullwidth-footer">
         <div className="content" >
           <br/>
           <div className="columns" id="footer_info">

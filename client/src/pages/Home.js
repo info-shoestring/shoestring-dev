@@ -4,8 +4,6 @@ import HeroPhoto from "../images/Logos/cover.png";
 import NavbarHome from "../components/Navbars/navbarHome";
 import DrawerHome from "../components/Drawers/DrawerHome";
 import Footer from "../components/footer";
-import About from './About';
-import Contact from './Contact';
 import "./design/About.css";
 import "./design/Home.css";
 // import $ from 'jquery'
@@ -67,8 +65,6 @@ function Home() {
       </div>
       <br />
       <br />
-      <About/>
-      <Contact/>
       <Footer/>
     </>
   );

@@ -2,6 +2,7 @@ import React from "react";
 import TheTeam from "./../components/TheTeam";
 import DrawerHome from "../components/Drawers/DrawerHome";
 import NavbarHome from "../components/Navbars/navbarHome";
+import Footer from "../components/footer";
 import "./design/About.css";
 import "./design/Home.css";
 
@@ -24,11 +25,11 @@ function About() {
         <br />
         <br />
         <div className="tile is-ancestor">
-          <div className="tile is vertical is-9 is-clearfix columns" id="tile">
+          <div className="tile is vertical is-10 is-clearfix columns" id="tile">
             <div className="column">
               <div className="tile is-ancestor">
                 <br />
-                <div className="tile is-vertical is-10 is-clearfix" id="tile">
+                <div className="tile is-vertical is-12 is-clearfix" id="tile">
                   <p className="title is-2">About Shoestring</p>
                   <br />
                   <p>
@@ -49,18 +50,18 @@ function About() {
               <p className="title is-2" id="team">
                 Privacy, Security & Terms of Use
               </p>
-              <p className="title is-4">Privacy Policy</p>
-              <p className="title is-4">Terms of Use</p>
-              <p className="title is-4">How do you protect my Financial Information?</p>
-              <p className="title is-4">How do you protect my Account?</p>
-              <p className="title is-4">How can I better protect myself?</p>
-              <p className="title is-4">Questions</p>
-              
+              <p className="title is-5">Privacy Policy</p>
+              <p className="title is-5">Terms of Use</p>
+              <p className="title is-5">How do you protect my Financial Information?</p>
+              <p className="title is-5">How do you protect my Account?</p>
+              <p className="title is-5">How can I better protect myself?</p>
+              <p className="title is-5">Questions</p>
             </div>
           </div>
         </div>
         <br />
       </div>
+      <Footer/>
     </>
   );
 }

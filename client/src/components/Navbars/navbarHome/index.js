@@ -2,7 +2,8 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./style.css";
 
-const NavbarHome = () => {
+function NavbarHome() {
+  
   const location = useLocation();
 
   return (
@@ -28,7 +29,7 @@ const NavbarHome = () => {
             <Link
               to="/about"
               className={
-                location.pathname === "/about" ? "navbar-item" : "navbar-item"
+                location.pathname === "/#about" ? "navbar-item" : "navbar-item"
               }
               id="about-link"
             >
@@ -38,7 +39,7 @@ const NavbarHome = () => {
             <Link
               to="/contact"
               className={
-                location.pathname === "/contact" ? "navbar-item" : "navbar-item"
+                location.pathname === "/#contact" ? "navbar-item" : "navbar-item"
               }
               id="contact-link"
             >

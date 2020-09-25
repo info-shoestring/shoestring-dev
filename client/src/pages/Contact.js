@@ -2,6 +2,7 @@ import React from "react";
 import DrawerHome from "../components/Drawers/DrawerHome";
 import NavbarHome from "../components/Navbars/navbarHome";
 import ContactForm from "../components/contactForm";
+import Footer from "../components/footer";
 import "./design/Home.css";
 import"./design/Contact.css"
 
@@ -21,11 +22,14 @@ function Contact() {
           <br />
         </div>
         <br />
-        <br />
         <div>
           <ContactForm />
         </div>
       </div>
+      <br/>
+      <br/>
+      <br/>
+      <Footer/>
     </>
   );
 }

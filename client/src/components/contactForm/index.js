@@ -35,12 +35,11 @@ function ContactForm() {
                             <label className="label">Leave a Message</label>
                             <textarea className="textarea" name="message" placeholder="Leave your comments . . .">
                             </textarea>
-                            {/* <br /> */}
                             <div className="field">
                                 <p className="control">
                                     <button className="button is-light" onClick={useEffect} type="submit" id="contactMe">
                                         Submit
-                                        </button>
+                                    </button>
                                 </p>
                             </div>
                         </form>

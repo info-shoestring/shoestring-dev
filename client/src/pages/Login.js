@@ -6,9 +6,10 @@ import { useFormik } from "formik";
 import $ from "jquery";
 import DrawerHome from "../components/Drawers/DrawerHome";
 import NavbarHome from "../components/Navbars/navbarHome";
+import Footer from "../components/footer";
 import "./design/About.css";
 import "./design/Home.css";
-import "./design/Contact.css"
+import "./design/Contact.css";
 
 //Setup  validation condition on the schema using Yup
 const validationSchenma = Yup.object({
@@ -64,13 +65,12 @@ const Login = (email, password) => {
   return (
     <>
       <section className="hero is-info" id="heroHomePage">
-      <div id="drawer-view">
-            <DrawerHome />
-          </div>
-        <div className="hero-body">
+        <div className="theyBothDrop" id="drawer-view">
+          <DrawerHome />
         </div>
+        <div className="hero-body"></div>
       </section>
-      <div id="tablet-mobile-auth">
+      <div className="adifferentfoot" id="tablet-mobile">
         <div id="nav-view">
           <NavbarHome />
           <br />
@@ -80,9 +80,12 @@ const Login = (email, password) => {
         <form onSubmit={handleLoginOnsubmit}>
           <div id="loginerrMsg"></div>
           <div className="tile is-ancestor">
-            <div className="tile is vertical is-7 box" id="tile">
-              <div className="tile is-parent">
-                <article className="tile is-child notification is-dark">
+            <div className="tile is vertical is-7 box my_foot" id="tile">
+              <div className="tile is-parent" id="make_smaller">
+                <article
+                  className="tile is-child notification is-dark"
+                  id="contact_container"
+                >
                   <p className="title" id="formTitle">
                     Login
                   </p>
@@ -148,13 +151,11 @@ const Login = (email, password) => {
             </div>
           </div>
         </form>
-        <footer className="contact-footer">
-        <div className="content has-text-centered">
-          <p>
-            © 2020 Shoestring
-          </p>
-        </div>
-      </footer>
+      </div>
+      <br />
+      <br />
+      <div id="login-footer-only">
+        <Footer />
       </div>
     </>
   );

@@ -45,7 +45,7 @@ function TheTeam() {
       <br />
       <div className="tile is-ancestor">
         <br />
-        <div className="tile is-vertical is-10 is-clearfix" id="tile">
+        <div className="tile is-vertical  is-clearfix" id="tile">
           <p className="title is-2" id="team">
             Meet the Current Team
           </p>

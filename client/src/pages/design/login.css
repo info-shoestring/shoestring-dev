@@ -21,6 +21,35 @@
     color: #f5f5f5;
 }
 
+#login-footer-only{
+    margin-top: 170px;
+}
+
+@media only screen and (max-width: 1024px){
+    #login-footer-only{
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .my_foot{
+        padding: 0px;
+        width: 280px;
+    }
+    #make_smaller{
+        width: 280px;
+    }
+    .adifferentfoot{
+        margin-left: 40px!important;
+    }
+    .theyBothDrop{
+        width: 320px!important;
+    }
+    #login-footer-only{
+        width: 335px!important;
+    }
+}
+
 #resetpwd{
     color: #3273dc;
     font-size: large; 

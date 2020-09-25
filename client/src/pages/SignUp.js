@@ -4,6 +4,7 @@ import httpClient from "../httpClient";
 import $ from "jquery";
 import * as Yup from "yup";
 import { useFormik } from "formik";
+import Footer from "../components/footer"
 import DrawerHome from "../components/Drawers/DrawerHome";
 import NavbarHome from "../components/Navbars/navbarHome";
 import "./design/About.css";
@@ -130,7 +131,7 @@ function SignUp(user) {
           <div className="tile is-ancestor">
             <div className="tile is vertical is-7 box" id="tile">
               <div className="tile is-parent">
-                <article className="tile is-child notification is-dark">
+                <article className="tile is-child notification is-dark" id="contact_container">
                   <p className="title" id="formTitle">
                     Sign Up
                   </p>
@@ -309,15 +310,10 @@ function SignUp(user) {
           </div>
         </form>
         </div>
-        <div>
-        <footer className="footer">
-        <div className="content has-text-centered">
-          <p>
-            © 2020 Shoestring
-          </p>
-        </div>
-        </footer>
-      </div>
+        <br/>
+      <br/>
+      <br/>
+        <Footer/>
     </>
   );
 }
