@@ -56,7 +56,7 @@ function Sidemenu() {
 
   return (
     <>
-      <div className="is-2 column" id="side_menu">
+      <div id="side_menu">
         <div className="menu sticky" id="menu-sticky">
           <br />
           <br />

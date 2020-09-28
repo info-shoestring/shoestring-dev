@@ -1,36 +1,50 @@
 #userPhoto{
-    height: 200px!important;
-    width: 200px!important;
+    height: 300px!important;
+    width: 300px!important;
     margin: 0 auto;
 }
 
+#block{
+    height: 250px!important;
+    width: 250px !important;
+    float: left;
+
+}
+
 #pinkDuck{
-    height: 410px!important;
-    width: 412px!important; 
-    overflow-y: scroll;
-    position: relative;
+    overflow-x: scroll;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    display: flex;
 }
 
 #send_money_icon{
     margin-top: -35px;
     margin-left: -110px;
     cursor: pointer;
-    color: #3bd389
+    color: #3bd389;
 }
 
 #send_money_icon:hover{
-    color: #363636
+    color: #363636;
 }
 
 #craftBrew{
     margin-bottom: 10px;
-    margin-top: 52px;
+    margin-top: -10px!important;
     padding-left: 0px;
+    height: 300px!important;
+    width: 78.5vw;
 }
 
 #remove_friend_icon{
-    color: #363636;
-    margin-right: -75%;
+    color: #cecece;
+    margin-right: -65%;
+}
+
+#remove_friend_icon:hover{
+    color: #363636
 }
 
 #send-money-photo{
@@ -84,8 +98,8 @@
     font-size: large;
   }
 
-  @media screen and (max-width: 768px){
-    #craftBrew{
+@media screen and (max-width: 768px){
+    #coffee_black, #add_new_friends{
         display: none;
     }
 }

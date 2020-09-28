@@ -4,7 +4,7 @@ import { withRouter } from "react-router-dom";
 import Modal from "react-modal";
 import Icon from "@mdi/react";
 import { mdiCloseCircle } from "@mdi/js";
-import { mdiCurrencyUsdCircle } from '@mdi/js';
+import { mdiCurrencyUsdCircle } from "@mdi/js";
 import httpClient from "../../httpClient.js";
 import * as Yup from "yup";
 import { useFormik } from "formik";
@@ -201,8 +201,9 @@ function Card() {
   return (
     <>
       <br />
-      <div className="tile is-4 container column is-fluid" id="craftBrew">
-        <div className="tile is-child box has-text-centered" id="pinkDuck">
+      <div className="tile is-child box" id="craftBrew">
+        <p className="title">My friends</p>
+        <div className="has-text-centered" id="pinkDuck">
           {friendResult.map((item) => {
             return (
               <div>
@@ -216,7 +217,7 @@ function Card() {
                       type="button"
                       path={mdiCloseCircle}
                       title="Remove Friend"
-                      size={1.15}
+                      size={.85}
                       id="remove_friend_icon"
                       data-removefriend={item._id}
                       onClick={removeAfriend}
@@ -230,25 +231,25 @@ function Card() {
                           alt={item.name}
                         />
                         <Icon
-                      type="button"
-                      path={mdiCurrencyUsdCircle}
-                      title="Send Money"
-                      size={2.5}
-                      id="send_money_icon"
-                      data-newfriend={item._id}
-                      onClick={sendMoneytofriend}
-                    />
+                          type="button"
+                          path={mdiCurrencyUsdCircle}
+                          title="Send Money"
+                          size={2.5}
+                          id="send_money_icon"
+                          data-newfriend={item._id}
+                          onClick={sendMoneytofriend}
+                        />
                       </div>
+                      <div id="coffee_black">
                       {item.name}
+                      </div>
+                    </div>
+                    <div id="coffee_black">
+                      <h3 className="has-text-centered" id="location">
+                        {item.city}
+                      </h3>
                     </div>
                   </figure>
-                  <div>
-                    <h3 className="has-text-centered" id="location">
-                      {item.city}
-                    </h3>
-                  </div>
-                  <hr />
-
                   <form onSubmit={handleSubmit}>
                     <Modal
                       isOpen={modalIsOpen}
@@ -258,7 +259,11 @@ function Card() {
                     >
                       <div className="modal-card">
                         <header className="modal-card-head">
-                          <img id="send-money-photo" src={sendMoney.image} alt={sendMoney.name}/>
+                          <img
+                            id="send-money-photo"
+                            src={sendMoney.image}
+                            alt={sendMoney.name}
+                          />
                           <p className="modal-card-title">
                             Send Money to {sendMoney.name}
                           </p>
@@ -354,7 +359,13 @@ function Card() {
                           ></button>
                         </header>
                         <section className="modal-card-body">
-                          <p>Removing {deleteFriend.name} means you can no longer send money to them until you add them back to your friends list. This will not stop any pending payments or return any money sent to {deleteFriend.name}.</p>
+                          <p>
+                            Removing {deleteFriend.name} means you can no longer
+                            send money to them until you add them back to your
+                            friends list. This will not stop any pending
+                            payments or return any money sent to
+                            {deleteFriend.name}.
+                          </p>
                         </section>
                         <footer className="modal-card-foot">
                           <button

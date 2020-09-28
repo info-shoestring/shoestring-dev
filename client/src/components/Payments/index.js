@@ -34,7 +34,7 @@ function Payments() {
     return (
         <div className="tile is-child is-fullwidth" id="payments">
             <div>
-                <p className="subtitle" >My Transactions</p>
+                <p className="title" >My Transactions</p>
                 {friendResult.length > 0 ?
                     friendResult.map(item => {
                         return (

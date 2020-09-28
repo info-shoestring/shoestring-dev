@@ -4,7 +4,7 @@ import './style.css';
 const SidemenuSettings = () => {
     return(
         <>
-        <div className="is-2 column" id="side_menu">
+        <div className="column is-one-fifth" id="side_menu">
         <div className="menu sticky" id="menu-sticky">
           <br />
           <ul className="menu-list"

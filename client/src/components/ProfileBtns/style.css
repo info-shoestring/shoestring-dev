@@ -19,6 +19,8 @@
 #side_menu{
     border-right: 2px solid lightgrey;
     background-color: #E9EEE7;
+    min-height: 1000px;
+    margin-bottom: -20px;
 }
 
 #menu-sticky{
