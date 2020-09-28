@@ -43,6 +43,11 @@
     margin-right: -65%;
 }
 
+#my-friend-title{
+    margin-left: 14px!important;
+    margin-top: -8px;
+}
+
 #remove_friend_icon:hover{
     color: #363636
 }

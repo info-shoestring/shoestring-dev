@@ -202,7 +202,7 @@ function Card() {
     <>
       <br />
       <div className="tile is-child box" id="craftBrew">
-        <p className="title">My friends</p>
+        <p className="title" id="my-friend-title">My Friends</p>
         <div className="has-text-centered" id="pinkDuck">
           {friendResult.map((item) => {
             return (
