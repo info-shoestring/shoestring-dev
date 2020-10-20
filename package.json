@@ -15,7 +15,8 @@
   "author": "Strategic Machines",
   "license": "MIT",
   "dependencies": {
-    "@mdi/js": "^5.3.45",
+    "@mdi/font": "^5.7.55",
+    "@mdi/js": "^5.7.55",
     "@mdi/react": "^1.4.0",
     "ajax": "0.0.4",
     "axios": "^0.19.2",

@@ -1,11 +1,16 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Modal from "react-modal";
+import Icon from "@mdi/react";
+import { mdiWallet } from "@mdi/js";
+import { mdiCameraPlus } from "@mdi/js";
+import { mdiAccountMultiplePlus } from "@mdi/js";
+import { mdiCog } from "@mdi/js";
 import ImportMoney from "../Wallet/ImportMoney";
 import ExportMoney from "../Wallet/ExportMoney";
 import AddImage from "../AddImage";
 import FriendCardModal from "../FriendCardModal";
-import './style.css'
+import "./style.css";
 
 const customStyles = {
   content: {
@@ -59,9 +64,17 @@ function Sidemenu() {
       <div className="column is-one-fifth" id="side_menu">
         <div className="menu sticky" id="menu-sticky">
           <br />
-          <ul className="menu-list" id="settings_menu_links">
+          <ul className="menu-list" id="">
             <li>
-              <a onClick={openWalletModal} id="sidemenu_link_design">My Wallet</a>
+              <a onClick={openWalletModal} id="settings_menu_links">
+                <Icon
+                  path={mdiWallet}
+                  title="Summary"
+                  size={0.95}
+                  id="admin_icons"
+                />
+                My Wallet
+              </a>
               <form>
                 <Modal
                   isOpen={walletmodalIsOpen}
@@ -108,7 +121,15 @@ function Sidemenu() {
               </form>
             </li>
             <li>
-              <a onClick={openPhotoModal} id="sidemenu_link_design">Add a Photo</a>
+              <a onClick={openPhotoModal} id="settings_menu_links">
+                <Icon
+                  path={mdiCameraPlus}
+                  title="Summary"
+                  size={0.95}
+                  id="admin_icons"
+                />
+                Add a Photo
+              </a>
               <form>
                 <Modal
                   isOpen={photomodalIsOpen}
@@ -140,7 +161,15 @@ function Sidemenu() {
               </form>
             </li>
             <li>
-              <a onClick={openFriendModal} id="sidemenu_link_design">My Friends</a>
+              <a onClick={openFriendModal} id="settings_menu_links">
+                <Icon
+                  path={mdiAccountMultiplePlus}
+                  title="Summary"
+                  size={0.95}
+                  id="admin_icons"
+                />
+                My Friends
+              </a>
               <form>
                 <Modal
                   isOpen={friendmodalIsOpen}
@@ -180,7 +209,15 @@ function Sidemenu() {
               </form>
             </li>
             <li>
-              <a href="/settings" id="sidemenu_link_design">Settings</a>
+              <a href="/settings" id="settings_menu_links">
+                <Icon
+                  path={mdiCog}
+                  title="Summary"
+                  size={0.95}
+                  id="admin_icons"
+                />
+                Settings
+              </a>
             </li>
           </ul>
         </div>
