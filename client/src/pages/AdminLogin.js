@@ -1,6 +1,6 @@
 import React from 'react';
 import httpAdmin from '../httpAdmin'
-import Nav from '../components/Navbars/navbar';
+// import Nav from '../components/Navbars/navbar';
 import '../pages/design/login.css';
 import * as Yup from 'yup';
 import { useFormik } from 'formik';
@@ -44,7 +44,7 @@ const AdminLogin = (email, password) =>{
 
     return (
         <>
-        <Nav/>
+        {/* <Nav/> */}
         <form onSubmit={handleLoginOnsubmit}>
         <div id='loginerrMsg'  ></div>
         <div className="tile is-ancestor">

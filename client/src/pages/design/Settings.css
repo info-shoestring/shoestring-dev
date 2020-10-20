@@ -3,6 +3,7 @@
 }
 
 #settings_menu_links:hover{
-    background-color: #E9EEE7!important;
-    color: #3bd389!important;
+    background-color: #3bd389!important;
+    color: #f5f5f5!important;
+    border-radius: 25px;
 }

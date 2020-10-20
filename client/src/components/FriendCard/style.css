@@ -31,11 +31,10 @@
 }
 
 #craftBrew{
-    margin-bottom: 10px;
-    margin-top: -10px!important;
+    margin-top: 35px!important;
     padding-left: 0px;
-    height: 300px!important;
-    width: 78.5vw;
+    padding-bottom: 0px;
+    height: 350px!important;
 }
 
 #remove_friend_icon{

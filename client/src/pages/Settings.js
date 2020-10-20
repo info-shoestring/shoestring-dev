@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import DrawerAuth from "../components/Drawers/DrawerAuth";
 import NavbarAuth from "../components/Navbars/NavBarAuth";
 import SidemenuSettings from "../components/ProfileBtns/sidemenuSettings";
-import { FaArrowCircleUp } from "react-icons/fa";
+// import { FaArrowCircleUp } from "react-icons/fa";
 import "../pages/design/signup.css";
 import "./design/Settings.css";
 import "./design/About.css";
@@ -35,7 +35,6 @@ function Settings() {
   return (
     <>
       {currentUserObj !== null ? (
-        <>
           <div>
             <section className="hero is-info" id="heroHomePage">
               <div id="drawer-view">
@@ -65,7 +64,6 @@ function Settings() {
               </div>
             </div>
           </div>
-        </>
       ) : (
         window.location.replace("/")
       )}

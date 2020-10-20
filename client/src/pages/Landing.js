@@ -8,8 +8,10 @@ import ProfileImage from "../components/ProfileImage";
 import Payments from "./../components/Payments";
 import Sidemenu from "../components/ProfileBtns/sidemenu";
 import Dropdown from "../components/ProfileBtns/dropdown";
-import Footer from '../components/footer';
+// import ScrollArrow from '../components/ScrollToTop'
 import moment from "moment";
+import "../pages/design/signup.css";
+import "./design/Settings.css";
 import "./design/About.css";
 import "./design/Home.css";
 import "./design/Landing.css";
@@ -58,33 +60,31 @@ function Landing() {
               <NavbarAuth />
               <br />
             </div>
+            <br />
             <div className="outerTile">
-              <div className="is-clearfix is-centered">
-                <div className="columns">
-                  <div className="column is-one-fifth" id="side-menu-column">
-                    <Sidemenu />
-                  </div>
-                  <div className="column is-full columns is-mobile is-multiline">
-                    
-                    <div className="column is-full columns" id="profile_cards">
+              <div className="is-clearfix columns is-centered">
+                <Sidemenu />
+                <article className="tile is-child notification">
+                  <div className="columns">
+                    <div className="column is-10 new-shift" id="editSettings">
+                      <br />
+                      <div className="column is-full" id="friends-container">
+                        <Friends />
+                      </div>
+                      <br />
                       <div
-                        className="is-two-fifths container column is-fluid"
-                        id="purpleDuck"
+                        className="column is-full columns "
+                        id="profile_cards"
                       >
                         <div className="tile is-vertical is-parent">
-                          <div className="tile box has-text-centered" >
+                          <div className="tile box has-text-centered">
                             <div id="profile_info_card">
                               <UserNameCard />
                               <ProfileImage />
                               <br />
-                              <p 
-                              >
-                                Funds Available: $ {currentUserObj.balance}
-                              </p>
+                              <p>Funds Available: $ {currentUserObj.balance}</p>
                               <p id="member">Member Since: {createdDate}</p>
-                              <div 
-                                id="dropdown-menu-display"
-                                >
+                              <div id="dropdown-menu-display">
                                 <br />
                                 <Dropdown />
                               </div>
@@ -93,19 +93,23 @@ function Landing() {
                           </div>
                         </div>
                       </div>
-                      <div className="box container column is-two-fifths" id="transactions_container">
-                        <Payments />
+                      <div
+                        className="column is-full columns add-class-name"
+                        id="profile_cards"
+                      >
+                        <div className="tile is-vertical is-parent">
+                          <div className="tile box has-text-centered">
+                            <Payments />
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                    <div className="column is-full">
-                      <Friends />
+                      {/* <ScrollArrow/> */}
                     </div>
                   </div>
-                </div>
+                </article>
               </div>
             </div>
           </div>
-          <Footer/>
         </div>
       ) : (
         window.location.replace("/")

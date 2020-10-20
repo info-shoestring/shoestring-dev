@@ -3,7 +3,7 @@ import NavbarAdminDetails from '../components/Navbars/NavbarAdminDetails';
 import DrawerAdmin from "../components/Drawers/DrawerAdmin";
 import SidemenuAdmin from "../components/ProfileBtns/sidemenuAdmin";
 
-const TotalIncome = () => {
+const TotalFundsStored = () => {
     return(
         <>
         <div>
@@ -26,8 +26,8 @@ const TotalIncome = () => {
                   <div className="columns">
                     <div className="column is-10 new-shift" id="editSettings">
                       <br />
-                      <p className="title">Profit Data</p>
-                      <p className="subtitle">Aggregate data on total profit produced by Shoestring</p>
+                      <p className="title">Stored Financial Data</p>
+                      <p className="subtitle">Aggregate data on funds stored by users, within Shoestring</p>
                     </div>
                   </div>
                 </article>    
@@ -39,4 +39,4 @@ const TotalIncome = () => {
     )
 }
 
-export default TotalIncome;
+export default TotalFundsStored;

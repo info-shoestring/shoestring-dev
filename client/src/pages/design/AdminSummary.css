@@ -1,12 +1,22 @@
+#acount_summary_cards{
+    margin-top: 100px;
+}
+
 #section1{
     margin-bottom: 0px;
     margin-top: 20px;
     height: 300px;
 }
 
+.admin_summary_stats{
+    font-size: 40px;
+    font-weight: bold;
+    color: #363636;
+
+}
+
 #section2{
     margin-top: 0px;
-    margin-bottom: -100px;
     height: 300px;
 }
 
@@ -20,4 +30,13 @@ a{
 
 a:hover{
     color: #3bd389!important;;
+}
+
+@media only screen and (max-width: 768px ){
+    #acount_summary_cards{
+        margin-top: 50px;
+    }
+    #section2{
+        margin-top: 50px;
+    }
 }

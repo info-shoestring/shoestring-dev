@@ -19,7 +19,7 @@ import AdminSignUp from './pages/AdminSignUp';
 import AdminSummary from './pages/AdminSummary';
 import TransactionHistory from './pages/TransactionHistory';
 import AllUsers from './pages/AllUsers';
-import NewUsers from './pages/NewUsers';
+import TotalFundsStored from './pages/TotalFundsStored';
 import TotalIncome from './pages/TotalIncome';
 import Settings from './pages/Settings';
 
@@ -60,7 +60,7 @@ function App(item) {
         <Route exact path="/admin-summary" component={AdminSummary}/>
         <Route exact path="/transaction-history" component={TransactionHistory}/>
         <Route exact path="/all-users" component={AllUsers}/>
-        <Route exact path="/new-users-last-month" component={NewUsers}/>
+        <Route exact path="/total-funds-stored" component={TotalFundsStored}/>
         <Route exact path="/total-income" component={TotalIncome}/> 
         </div>
       </Wrapper>

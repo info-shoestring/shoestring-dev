@@ -56,11 +56,10 @@ function Sidemenu() {
 
   return (
     <>
-      <div id="side_menu">
+      <div className="column is-one-fifth" id="side_menu">
         <div className="menu sticky" id="menu-sticky">
           <br />
-          <br />
-          <ul className="menu-list">
+          <ul className="menu-list" id="settings_menu_links">
             <li>
               <a onClick={openWalletModal} id="sidemenu_link_design">My Wallet</a>
               <form>

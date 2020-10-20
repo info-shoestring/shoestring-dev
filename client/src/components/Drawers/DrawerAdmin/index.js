@@ -2,16 +2,16 @@ import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import httpClient from "../../../httpClient";
 import Icon from "@mdi/react";
-import { mdiAccountCircle } from "@mdi/js";
+import { mdiBlur } from '@mdi/js';
+import { mdiBankTransfer } from '@mdi/js';
 import { mdiAccountMultiplePlus } from "@mdi/js";
-import { mdiCurrencyEur } from "@mdi/js";
-import { mdiBellOutline } from "@mdi/js";
-import { mdiCogOutline } from "@mdi/js";
+import { mdiCurrencyUsdCircle } from "@mdi/js";
 import { mdiLogout } from "@mdi/js";
+import { mdiPiggyBank } from '@mdi/js';
 import "./style.css";
 import "../style.css";
 
-const DrawerAuth = (currentUser) => {
+const DrawerAdmin = (currentUser) => {
   const location = useLocation();
 
   const [currentUserObj, setCurrentUserObj] = useState({
@@ -79,9 +79,9 @@ const DrawerAuth = (currentUser) => {
               <div>
                 <ul className="nav-primary" id="menu-links">
                   <Link
-                    to="/home"
+                    to="/admin-summary"
                     className={
-                      location.pathname === "/home"
+                      location.pathname === "/admin-summary"
                         ? "navbar-item title is-3"
                         : "navbar-item title is-3"
                     }
@@ -90,7 +90,7 @@ const DrawerAuth = (currentUser) => {
                     Shoestring
                   </Link>
                   <li key={currentUser._id}>
-                    {friendResult.map((item) => {
+                  {friendResult.map((item) => {
                       return (
                         <>
                           <figure className="image">
@@ -114,29 +114,49 @@ const DrawerAuth = (currentUser) => {
                   <hr />
                   <li>
                     <Link
-                      to="/home"
+                      to="/admin-summary"
                       className={
-                        location.pathname === "/home"
+                        location.pathname === "/admin-summary"
                           ? "navbar-item"
                           : "navbar-item"
                       }
                       id="myprofile-link"
                     >
                       <Icon
-                        path={mdiAccountCircle}
+                        path={mdiBlur}
                         title="Alerts"
-                        size={0.75}
+                        size={0.85}
                         color="#ffffff"
                         id="alert-icon"
                       />
-                      My Profile
+                      Summary
                     </Link>
                   </li>
                   <li>
                     <Link
-                      to="/findafriend"
+                      to="/transaction-history"
                       className={
-                        location.pathname === "/findafriend"
+                        location.pathname === "/transaction-history"
+                          ? "navbar-item"
+                          : "navbar-item"
+                      }
+                      id="myprofile-link"
+                    >
+                      <Icon
+                        path={mdiBankTransfer}
+                        title="Alerts"
+                        size={0.85}
+                        color="#ffffff"
+                        id="alert-icon"
+                      />
+                      Transactions
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/all-users"
+                      className={
+                        location.pathname === "/all-users"
                           ? "navbar-item"
                           : "navbar-item"
                       }
@@ -145,11 +165,51 @@ const DrawerAuth = (currentUser) => {
                       <Icon
                         path={mdiAccountMultiplePlus}
                         title="Alerts"
-                        size={0.75}
+                        size={0.85}
                         color="#ffffff"
                         id="alert-icon"
                       />
-                      Find Friends
+                      Users
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/total-funds-stored"
+                      className={
+                        location.pathname === "/total-funds-stored"
+                          ? "navbar-item"
+                          : "navbar-item"
+                      }
+                      id="international-link"
+                    >
+                      <Icon
+                        path={mdiPiggyBank}
+                        title="Alerts"
+                        size={0.85}
+                        color="#ffffff"
+                        id="alert-icon"
+                      />
+                      Stored Funds
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/total-income"
+                      className={
+                        location.pathname === "/total-income"
+                          ? "navbar-item"
+                          : "navbar-item"
+                      }
+                      id="international-link"
+                    >
+                      <Icon
+                        path={mdiCurrencyUsdCircle}
+                        title="Alerts"
+                        size={0.85}
+                        color="#ffffff"
+                        id="alert-icon"
+                      />
+                      Profits
                     </Link>
                   </li>
                   <li>
@@ -163,72 +223,16 @@ const DrawerAuth = (currentUser) => {
                       id="international-link"
                     >
                       <Icon
-                        path={mdiCurrencyEur}
+                        path={mdiLogout}
                         title="Alerts"
-                        size={0.75}
+                        size={0.85}
                         color="#ffffff"
                         id="alert-icon"
                       />
-                      International Payments
+                      Logout
                     </Link>
                   </li>
                   <hr />
-                  <li>
-                    <div className="has-text-centered" id="drawer_icon_links">
-                      <Link
-                        to="/alerts"
-                        className={
-                          location.pathname === "/alerts"
-                            ? "navbar-item title is-3"
-                            : "navbar-item title is-3"
-                        }
-                        id="alerts-link"
-                      >
-                        <Icon
-                          path={mdiBellOutline}
-                          title="Alerts"
-                          size={1.25}
-                          color="#ffffff"
-                          id="alert-icon"
-                        />
-                      </Link>
-                      <Link
-                        to="/settings"
-                        className={
-                          location.pathname === "/settings"
-                            ? "navbar-item title is-3"
-                            : "navbar-item title is-3"
-                        }
-                        id="settings-link"
-                      >
-                        <Icon
-                          path={mdiCogOutline}
-                          title="Settings"
-                          size={1.25}
-                          color="#ffffff"
-                          id="settings-icon"
-                        />
-                      </Link>
-                      <Link
-                        to="/"
-                        className={
-                          location.pathname === "/"
-                            ? "navbar-item title is-3"
-                            : "navbar-item title is-3"
-                        }
-                        id="logout-link"
-                        onClick={logOut}
-                      >
-                        <Icon
-                          path={mdiLogout}
-                          title="Logout"
-                          size={1.25}
-                          color="#ffffff"
-                          id="settings-icon"
-                        />
-                      </Link>
-                    </div>
-                  </li>
                 </ul>
               </div>
             </div>
@@ -249,4 +253,4 @@ const DrawerAuth = (currentUser) => {
   );
 };
 
-export default DrawerAuth;
+export default DrawerAdmin;
