@@ -32,6 +32,7 @@ const SidemenuSettings = () => {
                 Summary
               </Link>
             </li>
+            <br/>
             <li>
               <Link to="/transaction-history" id="settings_menu_links">
                 <Icon
@@ -43,6 +44,7 @@ const SidemenuSettings = () => {
                 Transactions
               </Link>
             </li>
+            <br/>
             <li>
               <Link to="/all-users" id="settings_menu_links">
                 <Icon
@@ -54,6 +56,7 @@ const SidemenuSettings = () => {
                 User
               </Link>
             </li>
+            <br/>
             <li>
               <Link to="/total-funds-stored" id="settings_menu_links">
                 <Icon
@@ -65,6 +68,7 @@ const SidemenuSettings = () => {
                 Stored Funds
               </Link>
             </li>
+            <br/>
             <li>
               <Link to="/total-income" id="settings_menu_links">
                 <Icon

@@ -120,6 +120,7 @@ function Sidemenu() {
                 </Modal>
               </form>
             </li>
+            <br/>
             <li>
               <a onClick={openPhotoModal} id="settings_menu_links">
                 <Icon
@@ -160,6 +161,7 @@ function Sidemenu() {
                 </Modal>
               </form>
             </li>
+            <br/>
             <li>
               <a onClick={openFriendModal} id="settings_menu_links">
                 <Icon
@@ -208,6 +210,7 @@ function Sidemenu() {
                 </Modal>
               </form>
             </li>
+            <br/>
             <li>
               <a href="/settings" id="settings_menu_links">
                 <Icon

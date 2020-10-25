@@ -30,6 +30,7 @@ const SidemenuSettings = () => {
                 Personal Information
               </a>
             </li>
+            <br/>
             <li>
               <a href="#edit-password" id="settings_menu_links">
               <Icon
@@ -41,6 +42,7 @@ const SidemenuSettings = () => {
                 Password
               </a>
             </li>
+            <br/>
             <li>
               <a href="#edit-photo" id="settings_menu_links">
               <Icon
@@ -52,6 +54,7 @@ const SidemenuSettings = () => {
                 Photo
               </a>
             </li>
+            <br/>
             <li>
               <a
                 href="#edit-bank-informaion"
@@ -66,6 +69,7 @@ const SidemenuSettings = () => {
                 Bank Information
               </a>
             </li>
+            <br/>
             <li>
               <a
                 href="#cancel_request_data"
@@ -80,6 +84,7 @@ const SidemenuSettings = () => {
                 Cancel My Account
               </a>
             </li>
+            <br/>
             <li>
               <a
                 href="#cancel_request_data"

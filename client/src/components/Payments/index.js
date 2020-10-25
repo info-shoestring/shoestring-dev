@@ -32,9 +32,10 @@ function Payments() {
 
    //map all the tranctions for current user transactions
     return (
+        <>
         <div className="tile is-child is-fullwidth" id="payments">
             <div>
-                <p className="title" >My Transactions</p>
+                
                 {friendResult.length > 0 ?
                     friendResult.map(item => {
                         return (
@@ -57,7 +58,7 @@ function Payments() {
                 }
             </div>
         </div>
-
+        </>
 
     )
 

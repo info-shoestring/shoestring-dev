@@ -349,7 +349,7 @@ function Card() {
                       <div className="modal-card">
                         <header className="modal-card-head">
                           <p className="modal-card-title">
-                            Are you sure you want to remove {deleteFriend.name}
+                            Remove {deleteFriend.name}?
                           </p>
                           <button
                             className="delete"

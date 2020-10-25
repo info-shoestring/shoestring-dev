@@ -68,7 +68,7 @@ function Dropdown() {
             aria-haspopup="true"
             aria-controls="dropdown-menu"
           >
-            <span>Profile Navigation</span>
+            <span>Menu</span>
             <span className="icon is-small">
               <i className="fas fa-angle-down" aria-hidden="true"></i>
             </span>

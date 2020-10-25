@@ -68,40 +68,74 @@ function Landing() {
                   <div className="columns">
                     <div className="column is-10 new-shift" id="editSettings">
                       <br />
+                      <div className="column is-full">
+                        <div className="tile is-ancestor">
+                          <div className="tile is-parent">
+                            <article className="tile is-child box">
+                              <p className="title is-4">Funds Available:</p>
+                              <p className="title is-2 has-text-centered">
+                                $ {currentUserObj.balance}
+                              </p>
+                              <hr />
+                              <p className="subtitle is-6" id="member">
+                                Member Since: {createdDate}
+                              </p>
+                            </article>
+                          </div>
+                          <div className="tile is-parent">
+                            <article className="tile is-child box">
+                              <p className="title is-4">Funds Sent</p>
+                              <p className="title is-2 has-text-centered">
+                                $ {currentUserObj.balance}
+                              </p>
+                            </article>
+                          </div>
+                          <div className="tile is-parent">
+                            <article className="tile is-child box">
+                              <p className="title is-4">Funds Received</p>
+                              <p className="title is-2 has-text-centered">
+                                $ {currentUserObj.balance}
+                              </p>
+                            </article>
+                          </div>
+                        </div>
+                      </div>
                       <div className="column is-full" id="friends-container">
+                        <div id="dropdown-menu-display">
+                          <br />
+                          <Dropdown />
+                        </div>
                         <Friends />
                       </div>
                       <br />
-                      <div
-                        className="column is-full columns "
-                        id="profile_cards"
-                      >
-                        <div className="tile is-vertical is-parent">
-                          <div className="tile box has-text-centered">
+                      <div className="column is-full" id="new-design">
+                      <div class="tile is-ancestor" >
+                        <div class="tile is-parent">
+                          <article class="tile is-child box">
                             <div id="profile_info_card">
                               <UserNameCard />
                               <ProfileImage />
                               <br />
-                              <p>Funds Available: $ {currentUserObj.balance}</p>
-                              <p id="member">Member Since: {createdDate}</p>
-                              <div id="dropdown-menu-display">
-                                <br />
-                                <Dropdown />
-                              </div>
                               <br />
                             </div>
-                          </div>
+                          </article>
+                        </div>
+                        <div class="tile is-parent">
+                          <article class="tile is-child box">
+                          <p className="title" >My Transactions</p>
+                            <div
+                              className="add-className-name"
+                              id="profile_cards"
+                            >
+                              <div className="tile is-vertical is-parent">
+                                <div>
+                                  <Payments />
+                                </div>
+                              </div>
+                            </div>
+                          </article>
                         </div>
                       </div>
-                      <div
-                        className="column is-full columns add-class-name"
-                        id="profile_cards"
-                      >
-                        <div className="tile is-vertical is-parent">
-                          <div className="tile box has-text-centered">
-                            <Payments />
-                          </div>
-                        </div>
                       </div>
                       {/* <ScrollArrow/> */}
                     </div>

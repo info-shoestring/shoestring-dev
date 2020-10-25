@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import NavbarAdminDetails from "../components/Navbars/NavbarAdminDetails";
 import DrawerAdmin from "../components/Drawers/DrawerAdmin";
 import SidemenuAdmin from "../components/ProfileBtns/sidemenuAdmin";
+import SummaryMap from '../charts/summaryMap';
 import CountUp from "react-countup";
 import "./design/AdminSummary.css";
 
@@ -105,6 +106,7 @@ const AdminSummary = () => {
                                 )}
                               </CountUp>
                             </div>
+                            <p>3 Linegraph here</p>
                           </Link>
                         </div>
                         <div className="tile is-child box">
@@ -157,7 +159,7 @@ const AdminSummary = () => {
                                 )}
                               </CountUp>
                             </div>
-                            <p className="subtitle is-5">Total Funds Stored this Quarter</p>
+                            <p className="subtitle is-5">Funds Stored this Quarter</p>
                             <div className="content has-text-centered">
                               <CountUp
                                 className="admin_summary_stats"
@@ -180,6 +182,7 @@ const AdminSummary = () => {
                                 )}
                               </CountUp>
                             </div>
+                            <p>3 Linegraph here</p>
                           </Link>
                         </div>
                       </div>
@@ -254,6 +257,7 @@ const AdminSummary = () => {
                                 )}
                               </CountUp>
                             </div>
+                            <p>3 Linegraph here</p>
                           </Link>
                         </div>
                         <div className="tile is-child box">
@@ -329,9 +333,13 @@ const AdminSummary = () => {
                                 )}
                               </CountUp>
                             </div>
+                            <p>3 Linegraph here</p>
                           </Link>
                         </div>
                       </div>
+                    </div>
+                    <div id="summary_map">
+                      <SummaryMap/>
                     </div>
                   </div>
                 </div>

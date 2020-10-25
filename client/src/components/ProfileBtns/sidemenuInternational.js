@@ -8,47 +8,40 @@ const SettingsMenuInternational = () => {
         <div className="menu sticky" id="menu-sticky">
           <br />
           <ul className="menu-list"
-            id="settings_menu_links">
+            >
             <li>
-              <a
-                href="#personal-information"
-                id="settings_menu_links"
-              >
-                Personal Information
-              </a>
-            </li>
-            <li>
-              <a href="#edit-password" id="settings_menu_links">
-                Password
-              </a>
-            </li>
-            <li>
-              <a href="#edit-photo" id="settings_menu_links">
-                Photo
-              </a>
-            </li>
-            <li>
-              <a
+            <a
                 href="#edit-bank-informaion"
                 id="settings_menu_links"
               >
                 Bank Information
               </a>
             </li>
+            <br/>
             <li>
-              <a
-                href="#cancel_request_data"
+            <a
+                href="#edit-bank-informaion"
                 id="settings_menu_links"
               >
-                Cancel My Account
+                Bank Information
               </a>
             </li>
+            <br/>
             <li>
-              <a
-                href="#cancel_request_data"
+            <a
+                href="#edit-bank-informaion"
                 id="settings_menu_links"
               >
-                Request My Data
+                Bank Information
+              </a>
+            </li>
+            <br/>
+            <li>
+              <a
+                href="#edit-bank-informaion"
+                id="settings_menu_links"
+              >
+                Bank Information
               </a>
             </li>
           </ul>

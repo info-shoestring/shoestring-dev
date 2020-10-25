@@ -10,7 +10,6 @@ import Landing from './pages/Landing';
 import FindAFriend from './pages/FindAFriend';
 import International from './pages/International'
 import MyWallet from './pages/MyWallet';
-// import CurrencyConverter from './pages/CurrencyConverter';
 import Reset from '../src/pages/ResetPwd'
 import CancelAccount from './pages/CancelAccount';
 import RequestData from './pages/RequestData';
@@ -47,7 +46,6 @@ function App(item) {
         <Route exact path="/findafriend" component={FindAFriend}/>
         <Route exact path="/mywallet" component={MyWallet}/>
         <Route exact path="/international-payments" component={International}/>
-        {/* <Route exact path="/currencyconverter" component={CurrencyConverter}/> */}
         <Route exact path="/cancelaccount" component={CancelAccount}/>
         <Route exact path="/requestdata" component={RequestData}/>
         <Route exact path="/settings" component={Settings}/>
