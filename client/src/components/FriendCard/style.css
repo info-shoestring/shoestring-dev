@@ -2,6 +2,7 @@
     height: 300px!important;
     width: 300px!important;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 #block{

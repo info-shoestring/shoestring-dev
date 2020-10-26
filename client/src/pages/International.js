@@ -2,10 +2,12 @@ import React, { useState, useEffect } from "react";
 import DrawerAuth from "../components/Drawers/DrawerAuth";
 import NavbarAuth from "../components/Navbars/NavBarAuth";
 import SideMenuInternational from "../components/ProfileBtns/sidemenuInternational";
+import CurrencyConverter from "../components/CurrencyConverter";
+import AvailableCurrency from "../components/CurrencyConverter/AvailableCurrency";
+import InternationalFriends from '../components/FriendCard/InternationalFriends';
 import moment from "moment";
 import httpClient from "../httpClient";
-import "./design/CurrencyConverter.css"
-;
+import "./design/CurrencyConverter.css";
 function International() {
   const [currentUserObj, setCurrentUserObj] = useState({
     currentUser: httpClient.getCurrentUser(),
@@ -65,10 +67,6 @@ function International() {
                               <p className="title is-2 has-text-centered">
                                 $ {currentUserObj.balance}
                               </p>
-                              <hr />
-                              <p className="subtitle is-6" id="member">
-                                Member Since: {createdDate}
-                              </p>
                             </article>
                           </div>
                           <div className="tile is-parent">
@@ -91,42 +89,39 @@ function International() {
                           </div>
                         </div>
 
-                        <div class="tile is-ancestor">
-                          <div class="tile is-parent">
-                            <article class="tile is-child box">
-                              <p class="title is-4">Country Codes</p>
-                              <p class="subtitle is-6">Currencies supported on Shoestring but country codes.</p>
-                              <div class="content tile" >
-                              <ul type="1" id="red-hat">
-                                    <li>    AUD = Australian Dollar</li><li>    HKD = Hong Kong Dollar</li>
-                                    <li>    EUR = Euro</li> <li>    ISK = Icelandic Króna</li>
-                                    <li>    CHF = Swiss Franc</li> <li>    PHP = Philippine Peso</li>
-                                    <li>    CNY = Chinese Yuan</li> <li>    DKK = Danish Krone</li>
-                                    <li>    GBP = British Pound</li> <li>    HUF = Hungarian Forint</li>
-                                    <li>    JPY = Japanese Yen</li> <li>    CZK = Czech Republic Koruna</li>
-                                    <li>    CAD = Canadian Dollar</li> <li>    RON = Romanian Leu</li>
-                                    <li>    USD = US Dollar</li> <li>    SEK = Swedish Krona</li>
-                                    <li>    IDR = Indonesian Rupiah</li> <li>    INR = Indian Rupee</li>
-                                    <li>    BRL = Brazilian Real</li> <li>    RUB = Russian Ruble</li>
-                                    <li>    HRK = Croatian Kuna</li> <li>    THB = Thai Baht</li>
-                                    <li>    SGD = Singapore Dollar</li> <li>    PLN = Polish Zloty</li>
-                                    <li>    BGN = Bulgarian Lev</li> <li>    TRY = Turkish Lira</li>
-                                    <li>    NOK = Norwegian Krone</li> <li>    NZD = New Zealand Dollar</li>
-                                    <li>    ZAR = South African Rand</li> <li>    MXN = Mexican Peso</li>
-                                    <li>    ILS = Israeli Shekel</li>
-                                    <li>    KRW = Kuwaiti Dinar</li>
-                                    <li>    MYR = Malaysian Ringgit</li>
-                                </ul>
+                        <div className="tile is-ancestor">
+                          <div className="tile is-parent">
+                            <article className="tile is-child box">
+                              <p className="title is-4">Country Codes</p>
+                              <p className="subtitle is-6">
+                                Currencies supported on Shoestring but country
+                                codes.
+                              </p>
+                              <div className="content tile">
+                                <AvailableCurrency />
                               </div>
                             </article>
                           </div>
-                          <div class="tile is-parent is-8">
-                            <article class="tile is-child box">
-                              <p class="title is-4">Currency Converter</p>
-                              <p class="subtitle is-6">Check up todate currency exchange</p>
-                              <div class="content">
-                              
+                          <div className="tile is-parent is-8">
+                            <article className="tile is-child box">
+                              <p className="title is-4">Currency Converter</p>
+                              <p className="subtitle is-6">
+                                
+                              </p>
+                              <br />
+                              <div className="content">
+                                <CurrencyConverter />
                               </div>
+                            </article>
+                          </div>
+                        </div>
+
+                        <div className="tile is-ancestor">
+                          <div className="tile is-parent">
+                            <article className="tile is-child box">
+                            <p className="title is-4">Send Money Internationaly</p>
+                            <p className="subtitle is-6">Select from your international friends</p>
+                            <InternationalFriends/>
                             </article>
                           </div>
                         </div>

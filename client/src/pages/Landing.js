@@ -68,6 +68,14 @@ function Landing() {
                   <div className="columns">
                     <div className="column is-10 new-shift" id="editSettings">
                       <br />
+                      <div className="column is-full" id="friends-container">
+                        <div id="dropdown-menu-display">
+                          <br />
+                          <Dropdown />
+                        </div>
+                        <Friends />
+                      </div>
+                      <br/>
                       <div className="column is-full">
                         <div className="tile is-ancestor">
                           <div className="tile is-parent">
@@ -75,10 +83,6 @@ function Landing() {
                               <p className="title is-4">Funds Available:</p>
                               <p className="title is-2 has-text-centered">
                                 $ {currentUserObj.balance}
-                              </p>
-                              <hr />
-                              <p className="subtitle is-6" id="member">
-                                Member Since: {createdDate}
                               </p>
                             </article>
                           </div>
@@ -100,13 +104,6 @@ function Landing() {
                           </div>
                         </div>
                       </div>
-                      <div className="column is-full" id="friends-container">
-                        <div id="dropdown-menu-display">
-                          <br />
-                          <Dropdown />
-                        </div>
-                        <Friends />
-                      </div>
                       <br />
                       <div className="column is-full" id="new-design">
                       <div class="tile is-ancestor" >
@@ -115,8 +112,10 @@ function Landing() {
                             <div id="profile_info_card">
                               <UserNameCard />
                               <ProfileImage />
-                              <br />
-                              <br />
+                              <hr />
+                              <p className="subtitle is-5 has-text-centered" id="member">
+                                Member Since: {createdDate}
+                              </p>
                             </div>
                           </article>
                         </div>
