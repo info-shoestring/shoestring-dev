@@ -104,11 +104,10 @@ function Landing() {
                           </div>
                         </div>
                       </div>
-                      <br />
                       <div className="column is-full" id="new-design">
-                      <div class="tile is-ancestor" >
-                        <div class="tile is-parent">
-                          <article class="tile is-child box">
+                      <div className="tile is-ancestor" >
+                        <div className="tile is-parent">
+                          <article className="tile is-child box">
                             <div id="profile_info_card">
                               <UserNameCard />
                               <ProfileImage />
@@ -119,8 +118,8 @@ function Landing() {
                             </div>
                           </article>
                         </div>
-                        <div class="tile is-parent">
-                          <article class="tile is-child box">
+                        <div className="tile is-parent">
+                          <article className="tile is-child box">
                           <p className="title" >My Transactions</p>
                             <div
                               className="add-className-name"

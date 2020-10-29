@@ -19,7 +19,7 @@ const customStyles = {
     transform: "translate(-50%, -50%)",
     padding: "0",
     border: "#ffffff" ,
-    borderRadius: "25px",
+    borderRadius: "15px",
     boxShadow: "6px -4px 70px -9px rgba(0,0,0,0.75)",
   },
 };
@@ -224,12 +224,10 @@ function Card() {
                     <div className="image has-text-centered" id="friendPic">
                       <div className="is-centered" id="send_mula">
                         <img
-                          type="button"
                           className="is-rounded"
                           id="userPhoto"
                           src={item.image}
                           alt={item.name}
-                          onClick={openModal}
                         />
                         <Icon
                           type="button"
@@ -238,10 +236,10 @@ function Card() {
                           size={2.5}
                           id="send_money_icon"
                           data-newfriend={item._id}
-                          onClick={openModal}
+                          onClick={sendMoneytofriend}
                         />
                       </div>
-                      <div id="coffee_black">
+                      <div>
                       {item.name}
                       </div>
                     </div>

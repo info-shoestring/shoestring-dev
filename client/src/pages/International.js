@@ -4,7 +4,7 @@ import NavbarAuth from "../components/Navbars/NavBarAuth";
 import SideMenuInternational from "../components/ProfileBtns/sidemenuInternational";
 import CurrencyConverter from "../components/CurrencyConverter";
 import AvailableCurrency from "../components/CurrencyConverter/AvailableCurrency";
-import InternationalFriends from '../components/FriendCard/InternationalFriends';
+import InternationalFriends from "../components/FriendCard/InternationalFriends";
 import moment from "moment";
 import httpClient from "../httpClient";
 import "./design/CurrencyConverter.css";
@@ -93,9 +93,8 @@ function International() {
                           <div className="tile is-parent">
                             <article className="tile is-child box">
                               <p className="title is-4">Country Codes</p>
-                              <p className="subtitle is-6">
-                                Currencies supported on Shoestring but country
-                                codes.
+                              <p className="subtitle is-6 ">
+                                Currencies supported on Shoestring
                               </p>
                               <div className="content tile">
                                 <AvailableCurrency />
@@ -105,9 +104,7 @@ function International() {
                           <div className="tile is-parent is-8">
                             <article className="tile is-child box">
                               <p className="title is-4">Currency Converter</p>
-                              <p className="subtitle is-6">
-                                
-                              </p>
+                              <p className="subtitle is-6"></p>
                               <br />
                               <div className="content">
                                 <CurrencyConverter />
@@ -119,9 +116,36 @@ function International() {
                         <div className="tile is-ancestor">
                           <div className="tile is-parent">
                             <article className="tile is-child box">
-                            <p className="title is-4">Send Money Internationaly</p>
-                            <p className="subtitle is-6">Select from your international friends</p>
-                            <InternationalFriends/>
+                              <p className="title is-4">
+                                Send Money Internationaly
+                              </p>
+                              <p className="subtitle is-6">
+                                Select from your international connections
+                              </p>
+                              <InternationalFriends />
+                            </article>
+                          </div>
+                        </div>
+
+                        <div className="tile is-ancestor">
+                          <div className="tile is-parent">
+                            <article className="tile is-child box">
+                              <p className="title is-4">Transactions Sent</p>
+                              <p className="subtitle is-6">
+                                
+                              </p>
+                              <div className="content tile">
+                              </div>
+                            </article>
+                          </div>
+                          <div className="tile is-parent">
+                            <article className="tile is-child box">
+                              <p className="title is-4">Transactions Received</p>
+                              <p className="subtitle is-6"></p>
+                              <br />
+                              <div className="content">
+                                
+                              </div>
                             </article>
                           </div>
                         </div>

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import ProfileImageEmptyState from './emptyState';
 import httpClient from '../../httpClient';
 import '../AddImage/style.css'
 
@@ -66,26 +67,28 @@ function ProfileImage() {
     return (
 
         <>
-             {currentUserObj.currentUser !== null ? (
+             
                 <div>
                     <br />
 
-                    { friendResult.map(item =>{ 
+                    {friendResult.length > 0 ? 
+                        friendResult.map(item =>{ 
                          return (
                             <div key={item._id}> 
-                                {loading ? (
-                                    <h3>Loading...</h3>
-                                ) : (
+                               
                                         <figure className="image is-centered">
                                             <img id="myPhoto" className="is-rounded"  src={item.image} alt="myPhoto" />
                                         </figure>
-                                    )}
                             </div>
                           )
                           } 
+                          ) : (
+                              <div id="empty_state_image_location">
+                                  <ProfileImageEmptyState/>
+                              </div>
                           )}  
                 </div>
-               ): window.location.replace("/")}
+               
         </>
     )
 }

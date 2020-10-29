@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import httpClient from "../../httpClient";
+import EmptyStatePayments from "../Payments/emptyState";
 import './style.css';
 
 function Payments() {
@@ -33,12 +34,12 @@ function Payments() {
    //map all the tranctions for current user transactions
     return (
         <>
-        <div className="tile is-child is-fullwidth" id="payments">
+        <div className="tile is-child is-fullwidth" >
             <div>
-                
                 {friendResult.length > 0 ?
                     friendResult.map(item => {
                         return (
+                            <div id="payments">
                             <article key={item._id} className="media is-scrollable" id="paymentList">
                                 <figure className="media-left">
                                     <p className="image is-square is-48x48">
@@ -49,12 +50,13 @@ function Payments() {
 
                                 <hr />
                             </article>
-                        )
-                    }
+                            </div>
+                        );
+                    }) : (
+                        <div>
+                            <EmptyStatePayments/>
+                        </div>
                     )
-                    :
-                    <p></p>
-
                 }
             </div>
         </div>

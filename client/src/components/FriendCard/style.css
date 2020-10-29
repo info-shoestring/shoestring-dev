@@ -9,7 +9,19 @@
     height: 250px!important;
     width: 250px !important;
     float: left;
+}
 
+#find_friends{
+    height: 100px!important;
+}
+#empty_state_button{
+    border-radius: 25px;
+}
+
+#empty_state_button:hover{
+    background-color: #3bd389;
+    color: #fefefe!important;
+    border: #3bd389;
 }
 
 #pinkDuck{
@@ -40,6 +52,7 @@
 #remove_friend_icon{
     color: #cecece;
     margin-right: -65%;
+    cursor: pointer;
 }
 
 #my-friend-title{

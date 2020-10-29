@@ -14,7 +14,7 @@ const SettingsMenuInternational = () => {
                 href="#edit-bank-informaion"
                 id="settings_menu_links"
               >
-                Bank Information
+                My Wallet
               </a>
             </li>
             <br/>
@@ -23,7 +23,7 @@ const SettingsMenuInternational = () => {
                 href="#edit-bank-informaion"
                 id="settings_menu_links"
               >
-                Bank Information
+                Additional Item
               </a>
             </li>
             <br/>
@@ -32,7 +32,7 @@ const SettingsMenuInternational = () => {
                 href="#edit-bank-informaion"
                 id="settings_menu_links"
               >
-                Bank Information
+                Find Friends
               </a>
             </li>
             <br/>
@@ -41,7 +41,7 @@ const SettingsMenuInternational = () => {
                 href="#edit-bank-informaion"
                 id="settings_menu_links"
               >
-                Bank Information
+                Settings
               </a>
             </li>
           </ul>

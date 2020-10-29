@@ -3,6 +3,7 @@ import "./style.css";
 import { withRouter } from "react-router-dom";
 import Modal from "react-modal";
 import Icon from "@mdi/react";
+import EmptyStateMessage from './emptyState';
 import { mdiCloseCircle } from "@mdi/js";
 import { mdiCurrencyUsdCircle } from "@mdi/js";
 import httpClient from "../../httpClient.js";
@@ -73,6 +74,18 @@ function Card() {
     handleFriends();
   }, []);
 
+  // function emptyState() {
+  //   if (friendResult.length === 0){
+  //     return (
+  //       <>
+  //         <EmptyStateMessage/>
+  //       </>
+  //     );
+    
+  //   };
+    
+  // }
+  
   function openModal() {
     setIsOpen(true);
   }
@@ -201,11 +214,14 @@ function Card() {
   return (
     <>
       <div className="tile is-child box" id="craftBrew">
-        <p className="title" id="my-friend-title">My Friends</p>
-        <div className="has-text-centered" id="pinkDuck">
-          {friendResult.map((item) => {
+        <p className="title" id="my-friend-title">
+          My Friends
+        </p>
+        <div className="has-text-centered">
+          {friendResult.length > 0 ?
+          friendResult.map((item) => {
             return (
-              <div>
+              <div  id="pinkDuck">
                 <article
                   key={item._id}
                   className="is-scrollable friend"
@@ -216,7 +232,7 @@ function Card() {
                       type="button"
                       path={mdiCloseCircle}
                       title="Remove Friend"
-                      size={.85}
+                      size={0.85}
                       id="remove_friend_icon"
                       data-removefriend={item._id}
                       onClick={removeAfriend}
@@ -239,9 +255,7 @@ function Card() {
                           onClick={sendMoneytofriend}
                         />
                       </div>
-                      <div id="coffee_black">
-                      {item.name}
-                      </div>
+                      <div id="coffee_black">{item.name}</div>
                     </div>
                     <div id="coffee_black">
                       <h3 className="has-text-centered" id="location">
@@ -278,17 +292,17 @@ function Card() {
                             How much would you like to transfer
                           </p>
                           <div id="errormsg"></div>
-                          <div class="field has-addons">
-                            <p class="control">
-                              <span class="select">
+                          <div className="field has-addons">
+                            <p className="control">
+                              <span className="select">
                                 <select>
                                   <option>$</option>
                                 </select>
                               </span>
                             </p>
-                            <p class="control is-expanded">
+                            <p className="control is-expanded">
                               <input
-                                class="input"
+                                className="input"
                                 type="text"
                                 placeholder="Amount of money to send"
                                 onChange={handleChange}
@@ -312,10 +326,10 @@ function Card() {
                           <p className="subtitle">
                             Leave a messeage for your friend
                           </p>
-                          <div class="field">
-                            <div class="control">
+                          <div className="field">
+                            <div className="control">
                               <textarea
-                                class="textarea"
+                                className="textarea"
                                 placeholder="For the fluffy rainbow unicorn"
                                 onChange={handleChange}
                                 name="message"
@@ -384,7 +398,12 @@ function Card() {
                 </article>
               </div>
             );
-          })}
+          }) : (
+            <div>
+              <EmptyStateMessage/>
+            </div>  
+          )
+        }
         </div>
       </div>
     </>
